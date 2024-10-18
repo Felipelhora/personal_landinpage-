@@ -1,7 +1,39 @@
 <template>
   <q-page>
+    <br />
+    <div class="text-h4 text-center text-weight-bolder">
+      REPOSITÓRIOS PÚBLICOS
+    </div>
     <div class="cards-wrapper">
-      <div v-for="card in cards" :key="card.id" class="card-container">
+      <div v-for="card in publicCards" :key="card.id" class="card-container">
+        <q-card class="my-card">
+          <q-img :src="card.imagem" class="card-image">
+            <div class="absolute-bottom text-h6 text-white">
+              {{ card.titulo }}
+            </div>
+          </q-img>
+          <q-card-section>
+            <div>
+              {{ card.descricao }}
+              <a
+                v-if="card.link"
+                :href="card.link"
+                target="_blank"
+                class="text-primary"
+              >
+                Veja mais
+              </a>
+            </div>
+          </q-card-section>
+        </q-card>
+      </div>
+    </div>
+
+    <div class="text-h4 text-center text-weight-bolder">
+      REPOSITÓRIOS PRIVADOS
+    </div>
+    <div class="cards-wrapper">
+      <div v-for="card in privateCards" :key="card.id" class="card-container">
         <q-card class="my-card">
           <q-img :src="card.imagem" class="card-image">
             <div class="absolute-bottom text-h6 text-white">
@@ -30,7 +62,7 @@
 <script setup>
 import { ref, onMounted } from "vue";
 
-const cards = ref([
+const publicCards = ref([
   {
     id: 1,
     titulo: "Pyproject",
@@ -79,8 +111,34 @@ const cards = ref([
   },
 ]);
 
+const privateCards = ref([
+  {
+    id: 1,
+    titulo: "Reconhecimento Facial",
+    descricao: "IA de reconhecimento Facial",
+    imagem: "",
+    link: "",
+  },
+  {
+    id: 2,
+    titulo: "SocialFollowTracker",
+    descricao:
+      "Sistema de acompanhamento e mineração de dados de redes sociais",
+    imagem: "",
+    link: "",
+  },
+  {
+    id: 3,
+    titulo: "Escavador",
+    descricao:
+      "Sistema de mineração e notificação de dados de fontes de noticias abertas",
+    imagem: "",
+    link: "",
+  },
+]);
+
 onMounted(() => {
-  cards.value.forEach((card, index) => {
+  publicCards.value.forEach((card, index) => {
     switch (index % 6) {
       case 0:
         card.imagem = new URL(
@@ -114,6 +172,28 @@ onMounted(() => {
           "../assets/img/langagues.png",
           import.meta.url
         ).href;
+        break;
+      default:
+        card.imagem = "";
+    }
+  });
+
+  privateCards.value.forEach((card, index) => {
+    switch (index % 3) {
+      case 0:
+        card.imagem = new URL(
+          "../assets/img/rec_facial.png",
+          import.meta.url
+        ).href;
+        break;
+      case 1:
+        card.imagem = new URL(
+          "../assets/img/redes_sociais.png",
+          import.meta.url
+        ).href;
+        break;
+      case 2:
+        card.imagem = new URL("../assets/img/osint.png", import.meta.url).href;
         break;
       default:
         card.imagem = "";

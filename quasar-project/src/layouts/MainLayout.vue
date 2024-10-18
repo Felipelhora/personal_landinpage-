@@ -15,9 +15,8 @@
             <router-link
               to="/"
               style="text-decoration: none"
-              class="text-white"
+              class="text-white text-weight-bolder text-h5"
             >
-              Nutricionista Luiza Souza
             </router-link>
           </q-toolbar-title>
 
@@ -27,9 +26,6 @@
             </router-link>
             <router-link to="/portfolio" style="text-decoration: none">
               <q-tab class="text-white" name="tab1" label="PortFolio"></q-tab>
-            </router-link>
-            <router-link to="/testeimc" style="text-decoration: none">
-              <q-tab name="tab2" class="text-white" label="Teste IMC"></q-tab>
             </router-link>
             <router-link to="/contato" style="text-decoration: none">
               <q-tab name="tab3" class="text-white" label="Contato"></q-tab>
@@ -60,8 +56,8 @@ export default defineComponent({
 
 <style>
 .all_page {
-  background-image: url("../assets/img/fundo_branco.jpg");
-  background-size: cover;
-  background-position: center;
+  background-color: rgb(4, 5, 49);
+  /* background-size: cover; */
+  /* background-position: center; */
 }
 </style>

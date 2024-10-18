@@ -1,57 +1,52 @@
 <template>
   <q-page>
-    <q-page-container class="flex flex-center ">
-      <div class="column ">
-        <div class="text-center">
-          <h2>Contate-nos</h2>
-        </div>
-        <div class="text-center q-mb-xl">
-          <q-icon name="fab fa-facebook" size="2.5em" class="q-mx-md" color="secondary" />
-          <q-icon name="fab fa-instagram" size="2.5em" class="q-mx-md" color="secondary" />
-          <q-icon name="fab fa-google-plus" size="2.5em" class="q-mx-md" color="secondary" />
-        </div>
-      </div>
-      <div class="column">
-        <q-form @submit="submitForm" class="text-center">
-          <q-input outlined v-model="formData.nome" label="Nome completo" dense class="q-mb-md" />
-          <q-input outlined v-model="formData.email" label="Email" type="email" dense class="q-mb-md" />
-          <q-input outlined v-model="formData.Text" label="Digite seu texto" dense type="textarea" />
-          <q-btn @click="openDialog" color="secondary" label="Enviar" type="submit" class="q-mt-md">
-          </q-btn>
-        </q-form>
+    <q-page-container class="flex flex-center">
+      <div class="contact-info text-h3 q-mb-md text-left">
+        <p><q-icon name="phone" /> <strong>Telefone:</strong> (61) xxxx-xxxx</p>
+        <p>
+          <q-icon name="email" class="text-green" />
+          <strong class="text-green">E-mail:</strong> @gmail.com
+        </p>
+        <p>
+          <img src="src/assets/img/lindkin.png" alt="LinkedIn" class="icon" />
+          <a
+            href="https://www.linkedin.com/in/felipe-hora-46821b240/"
+            target="_blank"
+            >LINKEDIN</a
+          >
+        </p>
+        <p>
+          <img src="src/assets/img/github.png" alt="Github" class="icon" />
+          <a href="https://github.com/Felipelhora/" target="_blank">GITHUB</a>
+        </p>
       </div>
     </q-page-container>
-    <div v-if="showSuccessMessage" class=" flex flex-center  text-secondary">
-      <p class="text-h6">Sua mensagem foi enviada com sucesso!</p>
-    </div>
   </q-page>
 </template>
 
 <script>
-
 export default {
-  name: 'ContatoForm',
+  name: "ContatoForm",
 
   data() {
     return {
       formData: {
-        nome: '',
-        email: '',
-        Text: ''
+        nome: "",
+        email: "",
+        Text: "",
       },
-      showSuccessMessage: false
-    }
+      showSuccessMessage: false,
+    };
   },
   methods: {
     submitForm() {
       if (this.formData.nome && this.formData.email && this.formData.Text) {
-
         setTimeout(() => {
-          console.log('Formulário enviado:', this.formData);
+          console.log("Formulário enviado:", this.formData);
           this.showSuccessMessage = true;
-          this.formData.nome = '';
-          this.formData.email = '';
-          this.formData.Text = '';
+          this.formData.nome = "";
+          this.formData.email = "";
+          this.formData.Text = "";
 
           setTimeout(() => {
             this.showSuccessMessage = false;
@@ -59,22 +54,19 @@ export default {
         }, 0);
       }
     },
-  }
+  },
 };
 </script>
 
 <style scoped>
-.column {
-  padding: 20px;
+.contact-info {
+  margin-bottom: 20px;
+  text-align: center;
 }
 
-.q-input,
-.q-btn {
-  width: 300px;
-  max-width: 400px;
-}
-
-.q-icon {
-  cursor: pointer;
+.icon {
+  width: 40px; /* Ajuste o tamanho conforme necessário */
+  height: 40px; /* Ajuste o tamanho conforme necessário */
+  margin-right: 8px; /* Espaçamento entre o ícone e o texto */
 }
 </style>
