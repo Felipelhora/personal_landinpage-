@@ -3,14 +3,19 @@
 
 {
 
-  "portugues":
+  "PORTUGUES":
   {
+    "language": "PORTUGÊS",
+    "flag": "🇧🇷",
     "about":
-              {"quem sou eu": ""}
+              {"who_am_I": "Um jurista apaixonado por tecnologia, possuo mais de 7 anos de experiência na área de desenvolvimento de sistemas, abrangendo desde infraestrutura, bancos de dados até o desenvolvimento de aplicações tanto back-end quanto front-end. Essa trajetória me proporcionou uma ampla gama de vivências e habilidades nas mais diversar técnologias."}
+  },
+  "ENGLISH":
+  {
+    "language": "ENGLISH",
+    "flag": "🇺🇸",
+    "about":
+              {"who_am_I": ""}
   }
-
-
-
-
 
 }

@@ -137,10 +137,24 @@
 
 <script setup>
 import { useQuasar } from "quasar";
-import { ref } from 'vue';
+import language from "src/language.json"
+import { reactive, ref } from 'vue';
 const $q = useQuasar();
 
 
+
+const jsonData = language;
+
+console.log(jsonData)
+
+
+const state = reactive({
+
+        language_selection : "",
+
+
+
+})
 
 const slide = ref('style');
 
