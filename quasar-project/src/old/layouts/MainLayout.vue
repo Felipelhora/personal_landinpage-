@@ -3,37 +3,35 @@
     <q-layout view="lHh Lpr lFf">
       <q-header
         elevated
-        class="text-white flex flex-center justify-center"
+        class="text-white flex flex-center"
         shadow-2
-        style="background-color: aquamarine"
+        style="height: 80px; background-color: rgb(4, 5, 49)"
       >
-      <div class="flex justify-center q-pa-md">
         <q-toolbar>
-          <q-toolbar-title class="text-purple-10" style="margin-left: 10px">
+          <q-toolbar-title class="text-white" style="margin-left: 60px">
+            <q-avatar>
+              <!-- <img src="../assets/img/logo-quasar-projeto.png" alt="Logo Projeto" style="filter: invert(100%); width: 60px"> -->
+            </q-avatar>
             <router-link
               to="/"
-
               style="text-decoration: none"
               class="text-white text-weight-bolder text-h5"
             >
-
             </router-link>
           </q-toolbar-title>
 
           <q-tabs shrink v-model="activeTab">
             <router-link to="/" style="text-decoration: none">
-              <q-tab class="text-purple-10" name="Home" label="Home"></q-tab>
+              <q-tab class="text-white" name="Home" label="Home"></q-tab>
             </router-link>
             <router-link to="/portfolio" style="text-decoration: none">
-              <q-tab class="text-purple-10" name="tab1" label="PortFolio"></q-tab>
+              <q-tab class="text-white" name="tab1" label="PortFolio"></q-tab>
             </router-link>
             <router-link to="/contato" style="text-decoration: none">
-              <q-tab name="tab3" class="text-purple-10" label="Contato"></q-tab>
+              <q-tab name="tab3" class="text-white" label="Contato"></q-tab>
             </router-link>
           </q-tabs>
-
         </q-toolbar>
-      </div>
       </q-header>
 
       <q-page-container>
@@ -43,17 +41,23 @@
   </div>
 </template>
 
-<script setup>
-import { ref } from 'vue';
+<script>
+import { defineComponent, ref } from "vue";
 
-
-const activeTab = ref('Home');
+export default defineComponent({
+  name: "MainLayout",
+  data() {
+    return {
+      activeTab: "Home",
+    };
+  },
+});
 </script>
 
 <style>
 .all_page {
-  /* background-color: rgb(22, 194, 108); */
-  /* background-size: cover; rgb(4, 5, 49);*/
+  background-color: rgb(4, 5, 49);
+  /* background-size: cover; */
   /* background-position: center; */
 }
 </style>

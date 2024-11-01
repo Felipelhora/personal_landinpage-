@@ -1,12 +1,18 @@
 <template>
-  <div class="row">
-<body_context></body_context>
-  </div>
+  <AboutComponent></AboutComponent>
+  <BannerComponent></BannerComponent>
+  <SliderComponent></SliderComponent>
 </template>
 
 <script setup>
 import { defineComponent } from "vue";
-import body_context from "src/components/Body_context.vue";
+
+import MenuComponent from "src/components/MenuComponent.vue";
+import BannerComponent from "src/components/BannerComponent.vue";
+import SliderComponent from "src/components/SliderComponent.vue";
+import AboutComponent from "src/components/AboutComponent.vue";
+import FooterComponent from "src/components/FooterComponent.vue";
+
 
 defineComponent({
   name: "IndexPage",

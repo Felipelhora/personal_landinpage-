@@ -1,10 +1,7 @@
 <template>
-  <q-page class="container">
+  <q-page>
     <br />
-    <br>
-    <br>
-
-    <div class="text-h4 text-center text-white text-weight-bolder">
+    <div class="text-h4 text-center text-weight-bolder">
       REPOSITÓRIOS PÚBLICOS
     </div>
     <div class="cards-wrapper">
@@ -31,14 +28,8 @@
         </q-card>
       </div>
     </div>
-    <br>
-    <br>
-    <div class="flex justify-center">
-        <q-separator color="orange" inset :style="{width: '50%'}" class="q-ma-md" />
-    </div>
-    <br>
-    <br>
-    <div class="text-h4 text-center text-white text-weight-bolder">
+
+    <div class="text-h4 text-center text-weight-bolder">
       REPOSITÓRIOS PRIVADOS
     </div>
     <div class="cards-wrapper">
@@ -123,8 +114,8 @@ const publicCards = ref([
 const privateCards = ref([
   {
     id: 1,
-    titulo: "Sistema de Reconhecimento Facial",
-    descricao: "Sistema com IA para reconhecimento Facial",
+    titulo: "Reconhecimento Facial",
+    descricao: "IA de reconhecimento Facial",
     imagem: "",
     link: "",
   },
@@ -233,10 +224,5 @@ onMounted(() => {
 
 .text-primary {
   color: #007bff; /* Cor do link, ajuste conforme necessário */
-}
-
-.container {
-  background-image: url("../assets/fundo_roxo.png");;
-
 }
 </style>

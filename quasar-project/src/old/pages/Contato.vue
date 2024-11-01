@@ -1,11 +1,11 @@
 <template>
-  <q-page class="container">
+  <q-page>
     <q-page-container class="flex flex-center">
-      <div class="contact-info text-h3 q-mb-md text-left text-white">
-        <p><q-icon name="phone"  class="text-white"/> <strong class="text-white">Telefone:</strong> (61) 99395-8195</p>
+      <div class="contact-info text-h3 q-mb-md text-left">
+        <p><q-icon name="phone" /> <strong>Telefone:</strong> (61) xxxx-xxxx</p>
         <p>
-          <q-icon name="email" class="text-white" />
-          <strong class="text-white">E-mail:</strong> felipelhora@gmail.com
+          <q-icon name="email" class="text-green" />
+          <strong class="text-green">E-mail:</strong> @gmail.com
         </p>
         <p>
           <img src="src/assets/img/lindkin.png" alt="LinkedIn" class="icon" />
@@ -69,10 +69,4 @@ export default {
   height: 40px; /* Ajuste o tamanho conforme necessário */
   margin-right: 8px; /* Espaçamento entre o ícone e o texto */
 }
-
-.container {
-  background-image: url("../assets/fundo_roxo.png");;
-
-}
-
 </style>
