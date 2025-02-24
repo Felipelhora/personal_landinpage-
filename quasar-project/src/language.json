@@ -1,16 +1,14 @@
-
-
-
 {
-
-  "portugues":
-  {
-    "about":
-              {"quem sou eu": ""}
+  "portugues": {
+    "about": {
+      "title_about_me": "Quem sou eu",
+      "text_about_me": "Um jurista apaixonado por tecnologia, possuo mais de 7 anos\nde experiência na área de desenvolvimento de sistemas,\nabrangendo desde infraestrutura, bancos de dados até o\ndesenvolvimento de aplicações tanto back-end quanto\nfront-end. Essa trajetória me proporcionou uma ampla gama de\nvivências e habilidades nas mais diversar técnologias."
+    }
+  },
+  "ingles": {
+    "about": {
+      "title_about_me": "how i am",
+      "text_about_me": "A lawyer passionate about technology, I have over 7 years of experience in system development, covering everything from infrastructure and databases to back-end and front-end application development. This journey has given me a broad range of experiences and skills in various technologies."
+    }
   }
-
-
-
-
-
 }

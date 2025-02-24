@@ -1,59 +1,43 @@
-<template>
-  <div class="all_page">
-    <q-layout view="lHh Lpr lFf">
-      <q-header
-        elevated
-        class="text-white flex flex-center justify-center"
-        shadow-2
-        style="background-color: aquamarine"
-      >
-      <div class="flex justify-center q-pa-md">
-        <q-toolbar>
-          <q-toolbar-title class="text-purple-10" style="margin-left: 10px">
-            <router-link
-              to="/"
-
-              style="text-decoration: none"
-              class="text-white text-weight-bolder text-h5"
-            >
-
-            </router-link>
-          </q-toolbar-title>
-
-          <q-tabs shrink v-model="activeTab">
-            <router-link to="/" style="text-decoration: none">
-              <q-tab class="text-purple-10" name="Home" label="Home"></q-tab>
-            </router-link>
-            <router-link to="/portfolio" style="text-decoration: none">
-              <q-tab class="text-purple-10" name="tab1" label="PortFolio"></q-tab>
-            </router-link>
-            <router-link to="/contato" style="text-decoration: none">
-              <q-tab name="tab3" class="text-purple-10" label="Contato"></q-tab>
-            </router-link>
-          </q-tabs>
-
-        </q-toolbar>
-      </div>
-      </q-header>
-
-      <q-page-container>
-        <router-view />
-      </q-page-container>
-    </q-layout>
-  </div>
-</template>
-
 <script setup>
-import { ref } from 'vue';
+import { reactive, watch, onMounted } from "vue";
+import config from "src/language.json";
 
+const idiomaOptions = [
+  { label: "Português", value: "portugues" },
+  { label: "Inglês", value: "ingles" },
+];
 
-const activeTab = ref('Home');
+const state = reactive({
+  idioma: "portugues",
+  language: "portugues",
+  text_about_me: "", // Inicializa vazio para evitar erro
+  title_about_me: "",
+});
+
+// Função para atualizar os textos
+const realizarAcao = () => {
+  console.log(state);
+  state.text_about_me = config[state.idioma]["about"]["text_about_me"];
+  state.title_about_me = config[state.idioma]["about"]["title_about_me"];
+  console.log(config[state.idioma]["about"]);
+};
 </script>
 
-<style>
-.all_page {
-  /* background-color: rgb(22, 194, 108); */
-  /* background-size: cover; rgb(4, 5, 49);*/
-  /* background-position: center; */
-}
-</style>
+<template>
+  <q-select
+    filled
+    stack-label
+    v-model="state.idioma"
+    label="Idioma"
+    option-value="value"
+    emit-value
+    map-options
+    :options="idiomaOptions"
+    @update:model-value="realizarAcao"
+  />
+  <div>
+    <h1>{{ state.title_about_me }}</h1>
+  </div>
+
+  <p>{{ state.text_about_me }}</p>
+</template>
