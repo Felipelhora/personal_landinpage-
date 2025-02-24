@@ -55,7 +55,7 @@
               <q-scroll-area class="fit">
                 <div class="q-mt-md text-center">
                   <div class="text-h3 text-weight-bolder">
-                    {{ state.title_about_me }}
+                    {{ props.lang.title_about_me }}
                   </div>
                   <h4 class="text-weight-bolder">FELIPE LIMA DA HORA</h4>
                   <div class="text-weight-bolder text-h5">
@@ -63,7 +63,7 @@
                   </div>
                   <br />
                   <p class="text-h5 text-justify">
-                    {{ state.text_about_me }}
+                    {{ props.lang.text_about_me }}
                   </p>
                 </div>
               </q-scroll-area>
@@ -188,37 +188,38 @@
 <script setup>
 import { useQuasar } from "quasar";
 import { ref, reactive, defineProps, watch } from "vue";
-import config from "src/language.json";
 
 const props = defineProps({
-  idioma: Object,
+  lang: Object,
 });
 
-console.log("config[props.idioma]");
-console.log(config[props.idioma]);
-console.log("config[props.idioma]");
+console.log(props.lang.title_about_me);
+console.log(props.lang.text_about_me);
+// console.log("config[props.idioma]");
+// console.log(config[props.idioma]);
+// console.log("config[props.idioma]");
 
 const $q = useQuasar();
 
 const slide = ref("style");
 
-console.log(config);
+// console.log(state);
 
-const state = reactive({
-  language: "portugues",
-  text_about_me: config[props.idioma]["about"]["text_about_me"],
-  title_about_me: config[props.idioma]["about"]["title_about_me"],
-});
+// const state = reactive({
+//   language: "portugues",
+//   text_about_me: config[props.idioma]["about"]["text_about_me"],
+//   title_about_me: config[props.idioma]["about"]["title_about_me"],
+// });
 
-// Watcher para atualizar os textos quando o idioma mudar
-watch(
-  () => state.idioma,
-  (newIdioma) => {
-    state.language = newIdioma;
-    state.text_about_me = config[newIdioma]["about"]["text_about_me"];
-    state.title_about_me = config[newIdioma]["about"]["title_about_me"];
-  }
-);
+// // Watcher para atualizar os textos quando o idioma mudar
+// watch(
+//   () => state.idioma,
+//   (newIdioma) => {
+//     state.language = newIdioma;
+//     state.text_about_me = config[newIdioma]["about"]["text_about_me"];
+//     state.title_about_me = config[newIdioma]["about"]["title_about_me"];
+//   }
+// );
 
 function teste() {
   if ($q.screen.xl) {
