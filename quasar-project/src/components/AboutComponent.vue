@@ -55,7 +55,7 @@
               <q-scroll-area class="fit">
                 <div class="q-mt-md text-center">
                   <div class="text-h3 text-weight-bolder">
-                    {{ props.lang.title_about_me }}
+                    {{ props.languageTexts.title_about_me }}
                   </div>
                   <h4 class="text-weight-bolder">FELIPE LIMA DA HORA</h4>
                   <div class="text-weight-bolder text-h5">
@@ -63,7 +63,7 @@
                   </div>
                   <br />
                   <p class="text-h5 text-justify">
-                    {{ props.lang.text_about_me }}
+                    {{ props.languageTexts.text_about_me }}
                   </p>
                 </div>
               </q-scroll-area>
@@ -190,11 +190,11 @@ import { useQuasar } from "quasar";
 import { ref, reactive, defineProps, watch } from "vue";
 
 const props = defineProps({
-  lang: Object,
+  languageTexts: Object,
 });
 
-console.log(props.lang.title_about_me);
-console.log(props.lang.text_about_me);
+console.log(props.languageTexts.title_about_me);
+console.log(props.languageTexts.text_about_me);
 // console.log("config[props.idioma]");
 // console.log(config[props.idioma]);
 // console.log("config[props.idioma]");

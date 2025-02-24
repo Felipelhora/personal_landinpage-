@@ -1,59 +1,48 @@
 <template>
-  <div class="all_page">
-    <q-layout view="lHh Lpr lFf">
-      <q-header
-        elevated
-        class="text-white flex flex-center justify-center"
-        shadow-2
-        style="background-color: aquamarine"
+  <div class="q-pa-md">
+    <div class="q-gutter-y-md" style="">
+      <q-tabs
+        v-model="state.tab"
+        dense
+        class="text-grey"
+        active-color="primary"
+        indicator-color="primary"
+        align="justify"
+        narrow-indicator
       >
-        <div class="flex justify-center q-pa-md">
-          <q-toolbar>
-            <q-toolbar-title class="text-purple-10" style="margin-left: 10px">
-              <router-link
-                to="/"
-                style="text-decoration: none"
-                class="text-white text-weight-bolder text-h5"
-              >
-              </router-link>
-            </q-toolbar-title>
+        <q-tab name="home" label="HOME" />
+        <q-tab name="portifolio" label="PORTIFÓLIO" />
+        <q-tab name="contato" label="CONTATO" />
+      </q-tabs>
 
-            <q-tabs shrink v-model="activeTab">
-              <router-link to="/" style="text-decoration: none">
-                <q-tab class="text-purple-10" name="Home" label="Home"></q-tab>
-              </router-link>
-              <router-link to="/portfolio" style="text-decoration: none">
-                <q-tab
-                  class="text-purple-10"
-                  name="tab1"
-                  label="PortFolio"
-                ></q-tab>
-              </router-link>
-              <router-link to="/contato" style="text-decoration: none">
-                <q-tab
-                  name="tab3"
-                  class="text-purple-10"
-                  label="Contato"
-                ></q-tab>
-              </router-link>
-            </q-tabs>
-            <q-select
-              class="col-xl-2 q-pa-sm"
-              filled
-              label="IDIOMA"
-              v-model="lang.idioma"
-              :options="idiomaOptions"
-              @update:model-value="chooseLanguage"
-            />
-          </q-toolbar>
-        </div>
-      </q-header>
-      <q-page-container>
-        <about :lang="lang"></about>
-        <banner></banner>
-        <slider></slider
-      ></q-page-container>
-    </q-layout>
+      <q-separator />
+
+      <q-select
+        v-model="state.idioma"
+        filled
+        label="PROFISSÃO"
+        :options="idiomaOptions"
+      ></q-select>
+
+      <q-tab-panels v-model="state.tab" animated>
+        <q-tab-panel name="home">
+          <about :languageTexts="languageTexts"></about>
+          <banner class="full-height full-width"></banner>
+          <slider class="full-height full-width"></slider>
+        </q-tab-panel>
+
+        <q-tab-panel name="alarms">
+          <div class="text-h6">Alarms</div>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </q-tab-panel>
+
+        <q-tab-panel name="movies">
+          <div class="text-h6">Movies</div>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        </q-tab-panel>
+      </q-tab-panels>
+      <q-separator />
+    </div>
   </div>
 </template>
 
@@ -63,25 +52,41 @@ import about from "/src/components/AboutComponent.vue";
 import banner from "/src/components/BannerComponent.vue";
 import slider from "/src/components/SliderComponent.vue";
 import language from "/src/language.json";
+import config from "src/configApp.json";
 
 const activeTab = ref("Home");
 
+// CONSTS
+
+//// LAYOUT
+const fontText = config.fontTexts || "Arial, sans-serif";
+const fontSizeText = config.sizeFontTexts || "18px";
+const confiFontText = {
+  fontFamily: fontText,
+  fontSize: fontSizeText,
+};
+
+//// IDIOMA
 const idiomaOptions = [
   { label: "Português", value: "portugues" },
   { label: "Inglês", value: "ingles" },
 ];
 
-const lang = reactive({
+///// VAR SISTEMA
+const languageTexts = reactive({
   idioma: "portugues",
   language: "portugues",
-  text_about_me: "adsada", // Inicializa vazio para evitar erro
-  title_about_me: "11221w21",
+  text_about_me: language["portugues"]["about"]["text_about_me"],
+  title_about_me: language["portugues"]["about"]["title_about_me"],
 });
 
-// Função para atualizar os textos
+const state = reactive({ tab: "home", idioma: "portugues" });
+
 const chooseLanguage = () => {
-  lang.text_about_me = language[lang.idioma]["about"]["text_about_me"];
-  lang.title_about_me = language[lang.idioma]["about"]["title_about_me"];
+  lang.text_about_me =
+    language[languageTexts.idioma["value"]]["about"]["text_about_me"];
+  lang.title_about_me =
+    language[languageTexts.idioma["value"]]["about"]["title_about_me"];
 };
 </script>
 
