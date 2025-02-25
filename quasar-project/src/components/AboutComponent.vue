@@ -74,7 +74,7 @@
             >
               <q-scroll-area class="fit">
                 <div class="text-h3 text-weight-bolder text-center">
-                  ESPECIALIDADES
+                  {{ props.languageTexts.specialties }}
                 </div>
                 <div class="q-mt-md">
                   <ul>
@@ -86,7 +86,7 @@
                           class="q-mr-sm"
                           style="width: 40px; height: 40px"
                         />
-                        MINERAÇÃO DE DADOS
+                        {{ props.languageTexts.specialties_data_mining }}
                       </div>
                     </li>
                     <li>
@@ -97,7 +97,7 @@
                           class="q-mr-sm"
                           style="width: 40px; height: 40px"
                         />
-                        RPA - ROBOTIC PROCESS AUTOMATION
+                        {{ props.languageTexts.specialties_rpa }}
                       </div>
                     </li>
                     <li>
@@ -108,7 +108,7 @@
                           class="q-mr-sm"
                           style="width: 40px; height: 40px"
                         />
-                        APLICAÇÃO REST - BACK END (PYTHON E PHP)
+                        {{ props.languageTexts.specialties_rest }}
                       </div>
                     </li>
                     <li>
@@ -119,7 +119,7 @@
                           class="q-mr-sm"
                           style="width: 40px; height: 40px"
                         />
-                        CIÊNCIA DE DADOS
+                        {{ props.languageTexts.specialties_data_science }}
                       </div>
                     </li>
                     <li>
@@ -130,7 +130,7 @@
                           class="q-mr-sm"
                           style="width: 40px; height: 40px"
                         />
-                        INTELIGÊNCIA ARTIFICIAL
+                        {{ props.languageTexts.specialties_ia }}
                       </div>
                     </li>
                   </ul>
@@ -138,28 +138,24 @@
               </q-scroll-area>
             </q-carousel-slide>
             <q-carousel-slide name="layers" class="column no-wrap flex-center">
-              <div class="text-h3 text-weight-bolder">OBJETIVOS</div>
+              <div class="text-h3 text-weight-bolder">
+                {{ props.languageTexts.objetivos }}
+              </div>
               <div class="q-mt-md text-center text-h6">
-                Aprender mais e mais com as novas tecnologias, desenvolver
-                minhas habilidades e fazer parte de um grande projeto onde possa
-                colaborar com meus conhecimentos técnicos e pessoais;
+                {{ props.languageTexts.objetivos_text }}
               </div>
             </q-carousel-slide>
             <q-carousel-slide name="map" class="column no-wrap flex-center">
               <q-scroll-area class="fit">
                 <div class="text-h3 text-weight-bolder text-center">
-                  HABILIDADES PESSOAIS
+                  {{ props.languageTexts.social_skills }}
                 </div>
                 <div class="no-wrap text-h6 justify-center">
                   <br />
                   <p>
-                    A advocacia me proporcionou a capacidade de me expressar com
-                    clareza e argumentos, aprimorando minha oratória e
-                    conversação. Como gestor da equipe de estagiários,
-                    desenvolvi a habilidade de lidar e gerir com as pessoas de
-                    forma eficaz.
+                    {{ props.languageTexts.social_skills_text }}
                   </p>
-                  <p>
+                  <!-- <p>
                     O militarismo me ensinou a receber e transmitir ordens,
                     seguir regras e ter um grande senso de responsabilidade nas
                     missões que me foram atribuídas.
@@ -174,7 +170,7 @@
                     impossível saber todas as coisas. Por isso, há a necessidade
                     de buscar conhecimento e, ao mesmo tempo, compartilhar esse
                     aprendizado com os outros.
-                  </p>
+                  </p> -->
                 </div>
               </q-scroll-area>
             </q-carousel-slide>
@@ -193,33 +189,9 @@ const props = defineProps({
   languageTexts: Object,
 });
 
-console.log(props.languageTexts.title_about_me);
-console.log(props.languageTexts.text_about_me);
-// console.log("config[props.idioma]");
-// console.log(config[props.idioma]);
-// console.log("config[props.idioma]");
-
 const $q = useQuasar();
 
 const slide = ref("style");
-
-// console.log(state);
-
-// const state = reactive({
-//   language: "portugues",
-//   text_about_me: config[props.idioma]["about"]["text_about_me"],
-//   title_about_me: config[props.idioma]["about"]["title_about_me"],
-// });
-
-// // Watcher para atualizar os textos quando o idioma mudar
-// watch(
-//   () => state.idioma,
-//   (newIdioma) => {
-//     state.language = newIdioma;
-//     state.text_about_me = config[newIdioma]["about"]["text_about_me"];
-//     state.title_about_me = config[newIdioma]["about"]["title_about_me"];
-//   }
-// );
 
 function teste() {
   if ($q.screen.xl) {
@@ -249,9 +221,3 @@ function teste() {
   align-items: center;
 }
 </style>
-<!-- Um jurista apaixonado por tecnologia, possuo mais de 7 anos
-                    de experiência na área de desenvolvimento de sistemas,
-                    abrangendo desde infraestrutura, bancos de dados até o
-                    desenvolvimento de aplicações tanto back-end quanto
-                    front-end. Essa trajetória me proporcionou uma ampla gama de
-                    vivências e habilidades nas mais diversar técnologias. -->

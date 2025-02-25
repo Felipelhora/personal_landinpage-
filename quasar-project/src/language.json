@@ -2,13 +2,59 @@
   "portugues": {
     "about": {
       "title_about_me": "Quem sou eu",
-      "text_about_me": "Um jurista apaixonado por tecnologia, possuo mais de 7 anos\nde experiência na área de desenvolvimento de sistemas,\nabrangendo desde infraestrutura, bancos de dados até o\ndesenvolvimento de aplicações tanto back-end quanto\nfront-end. Essa trajetória me proporcionou uma ampla gama de\nvivências e habilidades nas mais diversar técnologias."
+      "text_about_me": "Um jurista apaixonado por tecnologia, possuo mais de 7 anos\nde experiência na área de desenvolvimento de sistemas,\nabrangendo desde infraestrutura, bancos de dados até o\ndesenvolvimento de aplicações tanto back-end quanto\nfront-end. Essa trajetória me proporcionou uma ampla gama de\nvivências e habilidades nas mais diversar técnologias.",
+      "specialties": "ESPECIALIDADES",
+      "specialties_data_mining": "MINERAÇÃO DE DADOS",
+      "specialties_rpa": "RPA - ROBOTIC PROCESS AUTOMATION",
+      "specialties_rest": "APLICAÇÃO REST - BACK END (PYTHON E PHP)",
+      "specialties_data_science": "CIÊNCIA DE DADOS",
+      "specialties_ia": "INTELIGÊNCIA ARTIFICIAL",
+      "objetivos": "OBJETIVOS",
+      "objetivos_text": "Aprender mais e mais com as novas tecnologias, desenvolver minhas habilidades e fazer parte de um grande projeto onde possa colaborar com meus conhecimentos técnicos e pessoais;",
+      "social_skills": "HABILIDADES PESSOAIS",
+      "social_skills_text": "A advocacia me proporcionou a capacidade de me expressar com clareza e argumentos, aprimorando minha oratória e conversação. Como gestor da equipe de estagiários, desenvolvi a habilidade de lidar e gerir com as pessoas de forma eficaz.\nO militarismo me ensinou a receber e transmitir ordens, seguir regras e ter um grande senso de responsabilidade nas missões que me foram atribuídas.\nComo desenvolvedor, minha maior paixão, adquiri habilidades na resolução de problemas e uma nova forma de ver o mundo.\nPor fim, todas as minhas experiências de vida me ensinaram a ser criativo na resolução de problemas e a entender que é impossível saber todas as coisas. Por isso, há a necessidade de buscar conhecimento e, ao mesmo tempo, compartilhar esse aprendizado com os outros.",
+      "programming_languages": "LINGUAGENS DE PROGRAMAÇÃO",
+      "frameworks": "FRAMEWORKS",
+      "data_bases": "BANCO DE DADOS",
+      "tools": "FERRAMENTAS",
+      "postgraduate_studies": "PÓS GRADUAÇÃO",
+      "graduate": "GRADUAÇÃO",
+      "courses": "CURSOS",
+      "postgraduate_ia": "INTELIGÊNCIA ARTIFICIAL, CIÊNCIA DE DADOS E MACHINE LEARNING",
+      "postgraduate_digital_law": "DIREITO DIGITAL E LEGISLAÇÕES",
+      "postgraduate_const_law": "DIREITO CONSTITUCIONAL",
+      "graduate_ads": "ANÁLISE E DESENVOLVIMENTO DE SISTEMAS",
+      "graduate_dir": "DIREITO",
+      "courses_mining": "MINERAÇÃO, ANÁLISE E CIENCIA DE DADOS E INTELIGÊNCIA ARTIFICIAL"
     }
   },
   "ingles": {
     "about": {
-      "title_about_me": "how i am",
-      "text_about_me": "A lawyer passionate about technology, I have over 7 years of experience in system development, covering everything from infrastructure and databases to back-end and front-end application development. This journey has given me a broad range of experiences and skills in various technologies."
+      "title_about_me": "Who I Am",
+      "text_about_me": "A lawyer passionate about technology, I have over 7 years\nof experience in system development,\nranging from infrastructure, databases to the\ndevelopment of applications both back-end and\nfront-end. This journey has provided me with a wide range of\nexperiences and skills in various technologies.",
+      "specialties": "SPECIALTIES",
+      "specialties_data_mining": "DATA MINING",
+      "specialties_rpa": "RPA - ROBOTIC PROCESS AUTOMATION",
+      "specialties_rest": "REST APPLICATION - BACK END (PYTHON AND PHP)",
+      "specialties_data_science": "DATA SCIENCE",
+      "specialties_ia": "ARTIFICIAL INTELLIGENCE",
+      "objetivos": "OBJECTIVES",
+      "objetivos_text": "Learn more and more with new technologies, develop my skills, and be part of a great project where I can collaborate with my technical and personal knowledge;",
+      "social_skills": "SOFT SKILLS",
+      "social_skills_text": "My legal career has provided me with the ability to express myself clearly and persuasively, improving my oratory and conversational skills. As the manager of the intern team, I developed the ability to effectively handle and manage people.\nMilitary service taught me to follow orders, adhere to rules, and have a strong sense of responsibility for the missions entrusted to me.\nAs a developer, my greatest passion, I acquired problem-solving skills and a new way of seeing the world.\nFinally, all my life experiences have taught me to be creative in problem-solving and to understand that it is impossible to know everything. Therefore, there is a need to seek knowledge and, at the same time, share that knowledge with others.",
+      "programming_languages": "PROGRAMMING LANGUAGES",
+      "frameworks": "FRAMEWORKS",
+      "data_bases": "DATABASES",
+      "tools": "TOOLS",
+      "postgraduate_studies": "POSTGRADUATE STUDIES",
+      "graduate": "UNDERGRADUATE DEGREE",
+      "courses": "COURSES",
+      "postgraduate_ia": "ARTIFICIAL INTELLIGENCE, DATA SCIENCE AND MACHINE LEARNING",
+      "postgraduate_digital_law": "DIGITAL LAW AND LEGISLATION",
+      "postgraduate_const_law": "CONSTITUTIONAL LAW",
+      "graduate_ads": "SYSTEMS ANALYSIS AND DEVELOPMENT",
+      "graduate_dir": "LAW",
+      "courses_mining": "MINING, DATA ANALYSIS AND SCIENCE, AND ARTIFICIAL INTELLIGENCE"
     }
   }
 }
