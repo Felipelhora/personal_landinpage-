@@ -18,18 +18,20 @@
         <q-carousel-slide :name="1" class="column no-wrap">
             <div class="row fit justify-start items-center q-gutter-xs q-col-gutter no-wrap">
             <div class="slider-card rounded-borders col-4 full-height">
-              <span>{{ props.languageTexts.postgraduate_studies }}</span>
-                <h3>{{ props.languageTexts.postgraduate_ia }}</h3>
+                <span>PÓS GRADUAÇÃO</span>
+                <h3>INTELIGÊNCIA ARTIFICIAL, CIÊNCIA DE DADOS E MACHINE LEARNING</h3>
                 <p>UDF - 2023</p>
             </div>
             <div class="slider-card rounded-borders col-4 full-height">
-              <span>{{ props.languageTexts.postgraduate_studies }}</span>
-                <h3>{{ props.languageTexts.postgraduate_digital_law }}</h3>
+                <span>PÓS GRADUAÇÃO</span>
+                <h3>DIREITO DIGITAL E LEGISLAÇÕES</h3>
                 <p>GRAN - 2024</p>
             </div>
             <div class="slider-card rounded-borders col-4 full-height">
-            <span>{{ props.languageTexts.graduate }}</span>
-            <h3>{{ props.languageTexts.graduate_ads }}</h3>
+
+
+            <span>GRADUAÇÃO</span>
+            <h3>ANÁLISE E DESENVOLVIMENTO DE SISTEMAS</h3>
             <p>CEUB - 2022</p>
         </div>
             </div>
@@ -38,15 +40,15 @@
             <div class="row fit justify-start items-center q-gutter-xs q-col-gutter no-wrap">
 
               <div class="slider-card rounded-borders col-4 full-height">
-                <span>{{ props.languageTexts.postgraduate_studies }}</span>
-                <h3>{{ props.languageTexts.postgraduate_digital_law }}</h3>
+                <span>PÓS GRADUAÇÃO</span>
+                <h3>DIREITO CONSTITUCIONAL</h3>
                 <p>GRAN - 2024</p>
             </div>
 
               <div class="slider-card rounded-borders col-4 full-height">
 
-                <span>{{ props.languageTexts.graduate }}</span>
-                    <h3>{{ props.languageTexts.graduate  }}</h3>
+                    <span>GRADUAÇÃO</span>
+                    <h3>DIREITO</h3>
                     <p>UNIEURO - 2011</p>
                 </div>
                 <div class="slider-card rounded-borders col-4 full-height">
@@ -76,8 +78,8 @@
         <q-carousel-slide :name="1" class="column no-wrap">
             <div class="row fit justify-start items-center q-gutter-xs q-col-gutter no-wrap">
                 <div class="slider-card rounded-borders col-12 full-height">
-                  <span>{{ props.languageTexts.postgraduate_studies }}</span>
-                  <h3>{{ props.languageTexts.postgraduate_ia }}</h3>
+                  <span>PÓS GRADUAÇÃO</span>
+                  <h3>INTELIGÊNCIA ARTIFICIAL, CIÊNCIA DE DADOS E MACHINE LEARNING</h3>
                   <p>UDF - 2023</p>
                 </div>
             </div>
@@ -85,26 +87,26 @@
         <q-carousel-slide :name="2" class="column no-wrap">
                 <div class="row fit justify-start items-center q-gutter-xs q-col-gutter no-wrap">
                     <div class="slider-card rounded-borders col-12 full-height">
-                      <span>{{ props.languageTexts.postgraduate_studies }}</span>
-                      <h3>{{ props.languageTexts.postgraduate_const_law }}</h3>
-                        <p>GRAN - 2024</p>
+                      <span>PÓS GRADUAÇÃO</span>
+                <h3>DIREITO DIGITAL E LEGISLAÇÕES</h3>
+                <p>GRAN - 2024</p>
                     </div>
             </div>
         </q-carousel-slide>
         <q-carousel-slide :name="3" class="column no-wrap">
                 <div class="row fit justify-start items-center q-gutter-xs q-col-gutter no-wrap">
                     <div class="slider-card rounded-borders col-12 full-height">
-                      <span>{{ props.languageTexts.graduate }}</span>
-                      <h3>{{ props.languageTexts.graduate_ads }}</h3>
-                      <p>CEUB - 2022</p>
+                      <span>GRADUAÇÃO</span>
+            <h3>ANÁLISE E DESENVOLVIMENTO DE SISTEMAS</h3>
+            <p>CEUB - 2022</p>
                     </div>
             </div>
         </q-carousel-slide>
         <q-carousel-slide :name="4" class="column no-wrap">
                 <div class="row fit justify-start items-center q-gutter-xs q-col-gutter no-wrap">
                     <div class="slider-card rounded-borders col-12 full-height">
-                      <span>{{ props.languageTexts.graduate }}</span>
-                      <h3>{{ props.languageTexts.graduate_dir }}</h3>
+                      <span>PÓS GRADUAÇÃO</span>
+                <h3>DIREITO CONSTITUCIONAL</h3>
                 <p>GRAN - 2024</p>
                     </div>
             </div>
@@ -112,8 +114,8 @@
         <q-carousel-slide :name="5" class="column no-wrap">
                 <div class="row fit justify-start items-center q-gutter-xs q-col-gutter no-wrap">
                     <div class="slider-card rounded-borders col-12 full-height">
-                      <span>{{ props.languageTexts.graduate }}</span>
-                      <h3>{{ props.languageTexts.graduate_dir }}</h3>
+                      <span>GRADUAÇÃO</span>
+                    <h3>DIREITO</h3>
                     <p>UNIEURO - 2011</p>
                     </div>
             </div>
@@ -121,31 +123,30 @@
         <q-carousel-slide :name="6" class="column no-wrap">
                 <div class="row fit justify-start items-center q-gutter-xs q-col-gutter no-wrap">
                     <div class="slider-card rounded-borders col-12 full-height">
-                      <span>{{ props.languageTexts.courses }}</span>
-                    <h3>{{ props.languageTexts.courses_mining }}</h3>
+                      <span>CURSO</span>
+                    <h3>MINERAÇÃO, ANÁLISE E CIENCIA DE DADOS E INTELIGÊNCIA ARTIFICIAL</h3>
                     <p>IA ACADEMY - 2017</p>
                     </div>
             </div>
         </q-carousel-slide>
         </q-carousel>
-        <q-btn @click="teste">OLA MUNDO</q-btn>
     </div>
 </template>
 
 <script setup>
+    import { onMounted, onUnmounted, ref } from 'vue';
+    import language from "/src/language.json";
 
-import { ref, reactive, onMounted, onUnmounted, watch, defineProps } from 'vue'
+    defineProps({
+      idioma: String,
+    })
 
-const props = defineProps({
-  languageTexts: Object,
-});
-
-function teste(){
-
-  console.log(props);
+///// VAR SISTEMA
+const languageTexts = reactive({
+  language: "portugues"
+})
 
 
-}
 
     const slide = ref(1);
     let isMobile = ref(false)

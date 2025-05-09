@@ -56,5 +56,35 @@
       "graduate_dir": "LAW",
       "courses_mining": "MINING, DATA ANALYSIS AND SCIENCE, AND ARTIFICIAL INTELLIGENCE"
     }
+  },
+  "frances": {
+  "about": {
+    "title_about_me": "Qui je suis",
+    "text_about_me": "Avocat passionné par la technologie, je possède plus de 7 ans\nd'expérience dans le développement de systèmes,\nallant de l'infrastructure, des bases de données jusqu’au\ndéveloppement d'applications tant en back-end\nqu'en front-end. Ce parcours m’a permis d’acquérir une large gamme\nd’expériences et de compétences dans diverses technologies.",
+    "specialties": "SPÉCIALITÉS",
+    "specialties_data_mining": "EXPLORATION DE DONNÉES",
+    "specialties_rpa": "RPA - AUTOMATISATION DES PROCESSUS ROBOTISÉS",
+    "specialties_rest": "APPLICATION REST - BACK END (PYTHON ET PHP)",
+    "specialties_data_science": "SCIENCE DES DONNÉES",
+    "specialties_ia": "INTELLIGENCE ARTIFICIELLE",
+    "objetivos": "OBJECTIFS",
+    "objetivos_text": "Apprendre toujours plus avec les nouvelles technologies, développer mes compétences et faire partie d’un grand projet où je peux contribuer avec mes connaissances techniques et personnelles ;",
+    "social_skills": "COMPÉTENCES COMPORTEMENTALES",
+    "social_skills_text": "Ma carrière juridique m’a permis de m’exprimer clairement et de manière persuasive, améliorant ainsi mon éloquence et mes compétences conversationnelles. En tant que responsable de l’équipe de stagiaires, j’ai développé la capacité de gérer efficacement les personnes.\nLe service militaire m’a appris à suivre les ordres, à respecter les règles et à avoir un fort sens des responsabilités pour les missions qui m’étaient confiées.\nEn tant que développeur, ma plus grande passion, j’ai acquis des compétences en résolution de problèmes et une nouvelle façon de voir le monde.\nEnfin, toutes mes expériences de vie m’ont appris à être créatif dans la résolution de problèmes et à comprendre qu’il est impossible de tout savoir. Il est donc nécessaire de rechercher la connaissance et, en même temps, de la partager avec les autres.",
+    "programming_languages": "LANGAGES DE PROGRAMMATION",
+    "frameworks": "CADRES (FRAMEWORKS)",
+    "data_bases": "BASES DE DONNÉES",
+    "tools": "OUTILS",
+    "postgraduate_studies": "ÉTUDES DE TROISIÈME CYCLE",
+    "graduate": "DIPLÔME DE PREMIER CYCLE",
+    "courses": "COURS",
+    "postgraduate_ia": "INTELLIGENCE ARTIFICIELLE, SCIENCE DES DONNÉES ET APPRENTISSAGE AUTOMATIQUE",
+    "postgraduate_digital_law": "DROIT NUMÉRIQUE ET LÉGISLATION",
+    "postgraduate_const_law": "DROIT CONSTITUTIONNEL",
+    "graduate_ads": "ANALYSE ET DÉVELOPPEMENT DES SYSTÈMES",
+    "graduate_dir": "DROIT",
+    "courses_mining": "EXPLORATION, ANALYSE ET SCIENCE DES DONNÉES, ET INTELLIGENCE ARTIFICIELLE"
   }
+}
+
 }

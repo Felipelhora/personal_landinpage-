@@ -11,7 +11,6 @@
           <q-toolbar>
             <q-toolbar-title class="text-purple-10" style="margin-left: 10px">
             </q-toolbar-title>
-
             <q-tabs
               v-model="state.tab"
               dense
@@ -61,7 +60,7 @@
           <q-tab-panel name="home">
             <about :languageTexts="languageTexts"></about>
             <banner class="full-height full-width"></banner>
-            <slider class="full-height full-width"></slider>
+            <slider :languageTexts="languageTexts" class="full-height full-width"></slider>
           </q-tab-panel>
 
           <q-tab-panel name="portifolio">
@@ -106,6 +105,7 @@ const confiFontText = {
 const idiomaOptions = [
   { label: "🇧🇷🇵🇹", value: "portugues" },
   { label: "🇺🇸🇬🇧", value: "ingles" },
+  { label: "🇫🇷🇨🇦", value: "frances" },
 ];
 
 ///// VAR SISTEMA
