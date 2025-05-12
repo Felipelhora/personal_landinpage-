@@ -42,7 +42,7 @@ export default {
     submitForm() {
       if (this.formData.nome && this.formData.email && this.formData.Text) {
         setTimeout(() => {
-          console.log("Formulário enviado:", this.formData);
+
           this.showSuccessMessage = true;
           this.formData.nome = "";
           this.formData.email = "";

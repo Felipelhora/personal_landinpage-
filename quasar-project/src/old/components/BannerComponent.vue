@@ -17,7 +17,7 @@
         <br />
         <br />
         <Ul> PÓS GRADUAÇÃO </Ul>
-        <q-btn @click="teste">TESTE</q-btn>
+
       </div>
     </div>
   </div>
@@ -26,7 +26,7 @@
 <script setup>
 function teste() {
   const largura = window.innerWidth;
-  console.log(largura);
+
   if (largura >= 1200) {
     alert("A tela é XL");
   } else if (largura >= 992) {

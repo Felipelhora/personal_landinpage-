@@ -45,20 +45,7 @@ const leftBanner = computed(() => {
   return "0px"; // Adicione um valor padrão para outras larguras
 });
 
-function teste() {
-  console.log($q.screen.width);
-  if ($q.screen.xl == true) alert("xl");
-  if ($q.screen.lg == true) alert("lg");
-  if ($q.screen.md == true) alert("md");
-  if ($q.screen.sm == true) alert("sm");
-  if ($q.screen.xs == true) alert("xs");
-  // console.log('xl', $q.screen.xl) // EXTRA LARGE (GRANDE)
-  // console.log('lg', $q.screen.lg) // LARGE (MARIOR)
-  // console.log('md', $q.screen.md) // MEDIUM (MEDIO)
-  // console.log('sm', $q.screen.sm) // SMALL (PEQUENO)
-  // console.log('xs', $q.screen.xs) // EXTRA SMALL (MUITO PEQUENO)
-  // console.log(state);
-}
+
 </script>
 
 <style scoped>

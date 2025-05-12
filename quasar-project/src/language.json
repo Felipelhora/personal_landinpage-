@@ -1,10 +1,11 @@
 {
   "portugues": {
-    "about": {
+    "home": {
       "title_about_me": "Quem sou eu",
-      "text_about_me": "Um jurista apaixonado por tecnologia, possuo mais de 7 anos\nde experiência na área de desenvolvimento de sistemas,\nabrangendo desde infraestrutura, bancos de dados até o\ndesenvolvimento de aplicações tanto back-end quanto\nfront-end. Essa trajetória me proporcionou uma ampla gama de\nvivências e habilidades nas mais diversar técnologias.",
+      "text_about_me": "Profissional com sólida formação multidisciplinar — graduado em Direito, em Análise e Desenvolvimento de Sistemas, e atualmente cursando Engenharia Civil. Possuo mais de 7 anos de experiência em desenvolvimento de sistemas, atuando desde a infraestrutura e administração de bancos de dados até o desenvolvimento completo de aplicações, tanto no back-end quanto no front-end. No ambiente de trabalho, alio competências técnicas a qualidades comportamentais desenvolvidas ao longo de uma carreira marcada pela diversidade: a disciplina, resiliência e liderança, adquiridas com a carreira militar, somadas a 6 anos de atuação na advocacia, onde aperfeiçoei habilidades como argumentação lógica, escuta ativa, comunicação clara, negociação e análise crítica. Essas competências contribuem significativamente em contextos colaborativos, na gestão de projetos e na resolução eficiente de problemas.\nMinha trajetória me proporcionou uma visão ampla e estratégica da tecnologia e dos negócios. Com raciocínio jurídico e mente analítica, busco sempre entregar soluções tecnológicas sólidas, seguras e bem fundamentadas.",
       "specialties": "ESPECIALIDADES",
       "specialties_data_mining": "MINERAÇÃO DE DADOS",
+      "specialties_arquitetura": "ARQUITETURA DE PROJETOS",
       "specialties_rpa": "RPA - ROBOTIC PROCESS AUTOMATION",
       "specialties_rest": "APLICAÇÃO REST - BACK END (PYTHON E PHP)",
       "specialties_data_science": "CIÊNCIA DE DADOS",
@@ -26,14 +27,19 @@
       "graduate_ads": "ANÁLISE E DESENVOLVIMENTO DE SISTEMAS",
       "graduate_dir": "DIREITO",
       "courses_mining": "MINERAÇÃO, ANÁLISE E CIENCIA DE DADOS E INTELIGÊNCIA ARTIFICIAL"
+    },
+    "portifolio": {
+      "public_repositories": "REPOSITÓRIOS PÚBLICOS",
+      "private_repositories": "REPOSITÓRIOS PRIVADOS"
     }
   },
   "ingles": {
-    "about": {
+    "home": {
       "title_about_me": "Who I Am",
-      "text_about_me": "A lawyer passionate about technology, I have over 7 years\nof experience in system development,\nranging from infrastructure, databases to the\ndevelopment of applications both back-end and\nfront-end. This journey has provided me with a wide range of\nexperiences and skills in various technologies.",
+      "text_about_me": "Professional with a solid multidisciplinary background — holding degrees in Law and in Systems Analysis and Development, and currently pursuing a degree in Civil Engineering. I have over 7 years of experience in software development, working across infrastructure and database administration to full-stack application development, both back-end and front-end. In the workplace, I combine technical skills with behavioral competencies developed throughout a diverse career: discipline, resilience, and leadership gained from a military background, along with 6 years of legal practice, where I refined skills such as logical reasoning, active listening, clear communication, negotiation, and critical analysis. These competencies are valuable in collaborative environments, project management, and efficient problem-solving. My career path has given me a broad and strategic view of technology and business. With legal reasoning and an analytical mindset, I always strive to deliver robust, secure, and well-founded technological solutions.",
       "specialties": "SPECIALTIES",
       "specialties_data_mining": "DATA MINING",
+      "specialties_arquitetura": "PROJECT ARCHITECTURE",
       "specialties_rpa": "RPA - ROBOTIC PROCESS AUTOMATION",
       "specialties_rest": "REST APPLICATION - BACK END (PYTHON AND PHP)",
       "specialties_data_science": "DATA SCIENCE",
@@ -53,16 +59,21 @@
       "postgraduate_digital_law": "DIGITAL LAW AND LEGISLATION",
       "postgraduate_const_law": "CONSTITUTIONAL LAW",
       "graduate_ads": "SYSTEMS ANALYSIS AND DEVELOPMENT",
-      "graduate_dir": "LAW",
+      "graduate_dir": "UNDERGRADUATE DEGREE IN LAW",
       "courses_mining": "MINING, DATA ANALYSIS AND SCIENCE, AND ARTIFICIAL INTELLIGENCE"
+    },
+    "portifolio": {
+      "public_repositories": "PUBLIC REPOSITORIES",
+      "private_repositories": "PRIVATE REPOSITORIES"
     }
   },
   "frances": {
-  "about": {
+  "home": {
     "title_about_me": "Qui je suis",
-    "text_about_me": "Avocat passionné par la technologie, je possède plus de 7 ans\nd'expérience dans le développement de systèmes,\nallant de l'infrastructure, des bases de données jusqu’au\ndéveloppement d'applications tant en back-end\nqu'en front-end. Ce parcours m’a permis d’acquérir une large gamme\nd’expériences et de compétences dans diverses technologies.",
+    "text_about_me": "Professionnel doté d'une solide formation pluridisciplinaire — diplômé en Droit, en Analyse et Développement de Systèmes, et actuellement étudiant en Génie Civil. Je possède plus de 7 ans d'expérience dans le développement de systèmes, intervenant aussi bien sur l'infrastructure et l'administration de bases de données que sur le développement complet d'applications, aussi bien en back-end qu'en front-end. Dans le milieu professionnel, j'allie compétences techniques et qualités comportementales acquises au cours d'une carrière marquée par la diversité : la discipline, la résilience et le leadership issus de ma formation militaire, ainsi que 6 années d’exercice en tant qu’avocat, où j’ai perfectionné des compétences telles que le raisonnement logique, l’écoute active, la communication claire, la négociation et l’analyse critique. Ces atouts s’avèrent essentiels dans les contextes collaboratifs, la gestion de projets et la résolution efficace de problèmes. Mon parcours m’a permis d’acquérir une vision large et stratégique des technologies et des affaires. Doté d’un raisonnement juridique et d’un esprit analytique, je m'efforce toujours de livrer des solutions technologiques solides, sûres et bien argumentées.",
     "specialties": "SPÉCIALITÉS",
     "specialties_data_mining": "EXPLORATION DE DONNÉES",
+    "specialties_arquitetura": "ARCHITECTURE DE PROJETS",
     "specialties_rpa": "RPA - AUTOMATISATION DES PROCESSUS ROBOTISÉS",
     "specialties_rest": "APPLICATION REST - BACK END (PYTHON ET PHP)",
     "specialties_data_science": "SCIENCE DES DONNÉES",
@@ -82,9 +93,15 @@
     "postgraduate_digital_law": "DROIT NUMÉRIQUE ET LÉGISLATION",
     "postgraduate_const_law": "DROIT CONSTITUTIONNEL",
     "graduate_ads": "ANALYSE ET DÉVELOPPEMENT DES SYSTÈMES",
-    "graduate_dir": "DROIT",
-    "courses_mining": "EXPLORATION, ANALYSE ET SCIENCE DES DONNÉES, ET INTELLIGENCE ARTIFICIELLE"
-  }
+    "graduate_dir": "FORMATION UNIVERSITAIRE EN DROIT",
+    "courses_mining": "EXPLORATION, ANALYSE ET SCIENCE DES DONNÉES, ET INTELLIGENCE ARTIFICIELLE",
+    "public_repositories": "REPOSITÓRIOS PÚBLICOS_fr",
+    "private_repositories": "REPOSITÓRIOS PÚBLICOS_fr"
+  },
+    "portifolio": {
+      "public_repositories": "DÉPÔTS PUBLICS",
+      "private_repositories": "DÉPÔTS PRIVÉS"
+    }
 }
 
 }

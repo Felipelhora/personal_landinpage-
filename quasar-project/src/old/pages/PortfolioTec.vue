@@ -142,13 +142,13 @@ onMounted(() => {
     switch (index % 6) {
       case 0:
         card.imagem = new URL(
-          "../assets/img/pyptoject.png",
+          "../assets/img/pyproject.png",
           import.meta.url
         ).href;
         break;
       case 1:
         card.imagem = new URL(
-          "../assets/img/pdffree.png",
+          "../assets/img/pdfhandler.png",
           import.meta.url
         ).href;
         break;
@@ -159,17 +159,17 @@ onMounted(() => {
         ).href;
         break;
       case 3:
-        card.imagem = new URL("../assets/img/omie.png", import.meta.url).href;
+        card.imagem = new URL("../assets/img/omie_api.png", import.meta.url).href;
         break;
       case 4:
         card.imagem = new URL(
-          "../assets/img/ubuntu_install.png",
+          "../assets/img/rpa_linux.png",
           import.meta.url
         ).href;
         break;
       case 5:
         card.imagem = new URL(
-          "../assets/img/langagues.png",
+          "../assets/img/perceptron.png",
           import.meta.url
         ).href;
         break;
@@ -182,18 +182,18 @@ onMounted(() => {
     switch (index % 3) {
       case 0:
         card.imagem = new URL(
-          "../assets/img/rec_facial.png",
+          "../assets/img/reconhecimento_facial.png",
           import.meta.url
         ).href;
         break;
       case 1:
         card.imagem = new URL(
-          "../assets/img/redes_sociais.png",
+          "../assets/img/socialtracker.png",
           import.meta.url
         ).href;
         break;
       case 2:
-        card.imagem = new URL("../assets/img/osint.png", import.meta.url).href;
+        card.imagem = new URL("../assets/img/escavador.png", import.meta.url).href;
         break;
       default:
         card.imagem = "";

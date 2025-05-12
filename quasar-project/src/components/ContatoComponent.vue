@@ -1,8 +1,8 @@
 <template>
   <q-page class="container">
-    <q-page-container  class="flex flex-center">
+    <q-page-container   v-if="!$q.screen.xs" class="flex flex-center">
       <div class="contact-info column items-center q-pa-md">
-        <div class="text-h5 text-white q-mb-md text-center">
+        <div class="text-h3 text-white q-mb-md text-center">
           <q-icon name="email" class="q-mr-sm" />
           <strong>E-mail:</strong>
           <div>felipelhora@gmail.com</div>
@@ -13,7 +13,7 @@
           <a
             href="https://www.linkedin.com/in/felipe-hora-46821b240/"
             target="_blank"
-            class="text-white text-subtitle1"
+            class="text-white text-h3"
           >LINKEDIN</a>
         </div>
 
@@ -22,12 +22,12 @@
           <a
             href="https://github.com/Felipelhora/"
             target="_blank"
-            class="text-white text-subtitle1"
+            class="text-white text-h3"
           >GITHUB</a>
         </div>
       </div>
     </q-page-container>
-    <q-page-container class="flex flex-center">
+    <q-page-container v-if="$q.screen.xs" class="flex flex-center">
       <div class="contact-info column items-center q-pa-md">
         <div class="text-h5 text-white q-mb-md text-center">
           <q-icon name="email" class="q-mr-sm" />
@@ -59,13 +59,10 @@
 
 
 <script setup>
-import { ref } from 'vue'
 
-const formData = ref({
-  nome: '',
-  email: '',
-  Text: ''
-})
+import { useQuasar } from "quasar";
+
+const $q = useQuasar();
 
 </script>
 

@@ -12,7 +12,6 @@
       <br>
       <br>
       <br>
-
       <q-separator color="orange" inset />
       <br>
 
@@ -21,11 +20,8 @@
 
       <br>
       <br>
-      <div class="text-h5 text-white text-weight-bolder items-center justify-center">
-        <div class="text-h3 text-weight-bolder flex flex-column items-center justify-center q-ma-md">
-            LINGUAGENS DE PROGRAMAÇÃO
-      </div>
-
+      <div class="text-h3 text-white text-weight-bolder text-center">
+          {{ props.languageTexts.programming_languages }}
         <br />
         <div  class="flex flex-column items-center justify-center">
           <img src="/src/assets/img/javascript.png" alt="">
@@ -37,8 +33,8 @@
         </div>
         <br />
         <br />
-        <div class="text-h3 text-weight-bolder flex flex-column items-center justify-center q-ma-md">
-        FRAMEWORKS
+        <div class="text-h3 text-white text-weight-bolder text-center">
+          {{ props.languageTexts.frameworks }}
       </div>
 
         <br />
@@ -52,10 +48,10 @@
         </div>
         <br />
         <br />
-        <div class="text-h3 text-weight-bolder flex flex-column items-center justify-center q-ma-xs">
-        BANCO DE DADOS
+        <div class="text-h3 text-white text-weight-bolder text-center">
+          {{ props.languageTexts.data_bases }}
 
-      </div>
+        </div>
 
         <br />
         <div  class="flex flex-column items-center justify-center">
@@ -66,8 +62,8 @@
         <br />
         <br />
 
-          <div class="text-h3 text-weight-bolder flex flex-column items-center justify-center">
-        FERRAMENTAS
+          <div class="text-h3 text-white text-weight-bolder text-center">
+            {{ props.languageTexts.tools }}
       </div>
 
       <br />
@@ -96,6 +92,12 @@
 </template>
 
 <script setup>
+import {defineProps} from "vue";
+
+const props = defineProps({
+  languageTexts: Object,
+});
+
 
 </script>
 

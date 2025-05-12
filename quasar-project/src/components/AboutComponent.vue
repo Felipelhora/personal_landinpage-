@@ -1,38 +1,45 @@
 <template>
   <div class="container">
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-    <br />
-
+    <br v-if="!$q.screen.xs"/>
+    <br v-if="!$q.screen.xs"/>
+    <br v-if="!$q.screen.xs"/>
+    <br v-if="!$q.screen.xs"/>
+    <br v-if="!$q.screen.xs"/>
+    <br v-if="!$q.screen.xs"/>
     <div class="row">
       <div class="image col-xl-4 col-lg-4 col-xs-4 col-md-4 col-sm-4">
+        <div class="justify-center">
         <img
           v-if="$q.screen.xl"
           src="../assets/foto_face.png"
-          alt="Foto de Felipe Lima da Hora"
+          alt="Foto de Felipe  L. Hora"
           :style="{ width: '400px', marginLeft: '200px' }"
         />
         <img
           v-if="$q.screen.lg"
           src="../assets/foto_face.png"
-          alt="Foto de Felipe Lima da Hora"
-          :style="{ width: '400px', marginLeft: '100px' }"
+          alt="Foto de Felipe  L. Hora"
+          :style="{ width: '300px', marginLeft: '100px' }"
         />
         <img
-          v-if="$q.screen.md || $q.screen.sm"
+          v-if="$q.screen.md"
           src="../assets/foto_face.png"
-          alt="Foto de Felipe Lima da Hora"
+          alt="Foto de Felipe  L. Hora"
           :style="{ width: '350px' }"
         />
         <img
           v-if="$q.screen.xs"
           src="../assets/foto_face.png"
-          alt="Foto de Felipe Lima da Hora"
-          :style="{ width: '300px', marginLeft: '60px' }"
+          alt="Foto de Felipe L. Hora"
+          :style="{ width: '350px'}"
         />
+        <img
+          v-if="$q.screen.sm"
+          src="../assets/foto_face.png"
+          alt="Foto de Felipe L. Hora"
+          :style="{ width: '400px', marginLeft: '60px'}"
+        />
+        </div>
       </div>
       <div class="col-xl-7 col-lg-7 col-xs-12 col-md-8 col-sm-10">
         <div class="q-pa-md">
@@ -51,13 +58,13 @@
             class="rounded-oval"
             style="background-color: aquamarine"
           >
-            <q-carousel-slide name="style" class="column no-wrap flex-center">
-              <q-scroll-area class="fit">
+            <q-carousel-slide name="style" class="column no-wrap items-center q-pa-md">
+<!--              <q-scroll-area class="fit">-->
                 <div class="q-mt-md text-center">
                   <div class="text-h3 text-weight-bolder">
                     {{ props.languageTexts.title_about_me }}
                   </div>
-                  <h4 class="text-weight-bolder">FELIPE LIMA DA HORA</h4>
+                  <h4 class="text-weight-bolder">FELIPE L. HORA</h4>
                   <div class="text-weight-bolder text-h5">
                     FULLSTACK - DEVOPS
                   </div>
@@ -65,15 +72,19 @@
                   <p class="text-h5 text-justify">
                     {{ props.languageTexts.text_about_me }}
                   </p>
+                  <br>
+                  <br>
                 </div>
-              </q-scroll-area>
+<!--              </q-scroll-area>-->
             </q-carousel-slide>
             <q-carousel-slide
+              v-if="!$q.screen.xs"
               name="tv"
               class="text-h4 column no-wrap text-weight-bolder no-wrap flex-center"
             >
-              <q-scroll-area class="fit">
-                <div class="text-h3 text-weight-bolder text-center">
+              <q-scroll-area  class="fit">
+                <div class="q-mt-md text-center">
+                  <div class="text-h4 text-weight-bolder">
                   {{ props.languageTexts.specialties }}
                 </div>
                 <div class="q-mt-md">
@@ -133,9 +144,113 @@
                         {{ props.languageTexts.specialties_ia }}
                       </div>
                     </li>
+                    <li>
+                      <div>
+                        <img
+                          src="src/assets/img/arquitetura.png"
+                          alt=""
+                          class="q-mr-sm"
+                          style="width: 40px; height: 40px"
+                        />
+                        {{ props.languageTexts.specialties_arquitetura }}
+                      </div>
+                    </li>
                   </ul>
                 </div>
+                </div>
               </q-scroll-area>
+            </q-carousel-slide>
+            <q-carousel-slide
+              v-if="$q.screen.xs"
+              name="tv"
+              class="text-weight-bolder text-center"
+            >
+            <div class="text-h4 text-weight-bolder text-center">
+                    {{ props.languageTexts.specialties }}
+                  <div class="text-center" >
+
+                    <br>
+                    <img
+                      src="src/assets/img/mining.png"
+                      alt=""
+                      style="width: 40px; height: 40px"
+                    />
+                    <p
+                      class="text-h5 text-weight-bolder text-center"
+                      style="white-space: normal; word-break: break-word;"
+                    >
+                      {{ props.languageTexts.specialties_data_mining }}
+                    </p>
+                  </div>
+              <div class="text-center" >
+
+                <br>
+                <img
+                  src="src/assets/img/rpa_.png"
+                  alt=""
+                  style="width: 40px; height: 40px"
+                />
+                <p
+                  class=" text-h5  text-weight-bolder text-center"
+                  style="white-space: normal; word-break: break-word;"
+                >
+                  {{ props.languageTexts.specialties_rpa }}
+                </p>
+              </div>
+              <div class="text-center" >
+
+                <br>
+                <img
+                  src="src/assets/img/api.png"
+                  alt=""
+                  style="width: 40px; height: 40px"
+                />
+                <p
+                  class="text-h5 text-weight-bolder text-center"
+                  style="white-space: normal; word-break: break-word;"
+                >
+                  {{ props.languageTexts.specialties_rest }}
+                </p>
+              </div>
+
+
+              <div class="text-center" >
+
+                <br>
+                <img
+                  src="src/assets/img/IA.png"
+                  alt=""
+                  style="width: 40px; height: 40px"
+                />
+                <p
+                  class="text-h5  text-weight-bolder text-center"
+                  style="white-space: normal; word-break: break-word;"
+                >
+                  {{ props.languageTexts.specialties_data_science }}
+                </p>
+              </div>
+
+
+
+              <div class="text-center" >
+                <br>
+
+                <img
+                  src="src/assets/img/arquitetura.png"
+                  alt=""
+                  style="width: 40px; height: 40px"
+                />
+                <p
+                  class="text-h5 text-weight-bolder text-center"
+                  style="white-space: normal; word-break: break-word;"
+                >
+                  {{ props.languageTexts.specialties_arquitetura }}
+                </p>
+              </div>
+              <br>
+              <br>
+
+                </div>
             </q-carousel-slide>
             <q-carousel-slide name="layers" class="column no-wrap flex-center">
               <div class="text-h3 text-weight-bolder">
@@ -145,34 +260,19 @@
                 {{ props.languageTexts.objetivos_text }}
               </div>
             </q-carousel-slide>
-            <q-carousel-slide name="map" class="column no-wrap flex-center">
-              <q-scroll-area class="fit">
-                <div class="text-h3 text-weight-bolder text-center">
-                  {{ props.languageTexts.social_skills }}
-                </div>
-                <div class="no-wrap text-h6 justify-center">
-                  <br />
-                  <p>
-                    {{ props.languageTexts.social_skills_text }}
+            <q-carousel-slide name="map" class="column no-wrap items-center q-pa-md">
+              <div class="q-mt-md full-width" style="max-width: 800px;">
+                  <p class="text-h3 text-weight-bolder text-center">
+                    {{ props.languageTexts.social_skills}}
                   </p>
-                  <!-- <p>
-                    O militarismo me ensinou a receber e transmitir ordens,
-                    seguir regras e ter um grande senso de responsabilidade nas
-                    missões que me foram atribuídas.
-                  </p>
-                  <p>
-                    Como desenvolvedor, minha maior paixão, adquiri habilidades
-                    na resolução de problemas e uma nova forma de ver o mundo.
-                  </p>
-                  <p>
-                    Por fim, todas as minhas experiências de vida me ensinaram a
-                    ser criativo na resolução de problemas e a entender que é
-                    impossível saber todas as coisas. Por isso, há a necessidade
-                    de buscar conhecimento e, ao mesmo tempo, compartilhar esse
-                    aprendizado com os outros.
-                  </p> -->
-                </div>
-              </q-scroll-area>
+                <br>
+                <br>
+                <p class="text-h5 text-justify">
+                  {{ props.languageTexts.social_skills_text}}
+                </p>
+                <br>
+                <br>
+              </div>
             </q-carousel-slide>
           </q-carousel>
         </div>
@@ -193,19 +293,6 @@ const $q = useQuasar();
 
 const slide = ref("style");
 
-function teste() {
-  if ($q.screen.xl) {
-    alert("xl");
-  } else if ($q.screen.lg) {
-    alert("lg");
-  } else if ($q.screen.md) {
-    alert("md");
-  } else if ($q.screen.sm) {
-    alert("sm");
-  } else {
-    alert("xs"); // Para telas extras pequenas
-  }
-}
 </script>
 
 <style scoped>

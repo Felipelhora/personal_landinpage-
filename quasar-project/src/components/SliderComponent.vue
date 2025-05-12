@@ -46,12 +46,12 @@
               <div class="slider-card rounded-borders col-4 full-height">
 
                 <span>{{ props.languageTexts.graduate }}</span>
-                    <h3>{{ props.languageTexts.graduate  }}</h3>
+                    <h3>{{ props.languageTexts.graduate_dir  }}</h3>
                     <p>UNIEURO - 2011</p>
                 </div>
                 <div class="slider-card rounded-borders col-4 full-height">
-                    <span>CURSO</span>
-                    <h3>MINERAÇÃO, ANÁLISE E CIENCIA DE DADOS E INTELIGÊNCIA ARTIFICIAL</h3>
+                  <span>{{ props.languageTexts.courses }}</span>
+                    <h3>{{props.languageTexts.courses_mining}}</h3>
                     <p>IA ACADEMY - 2017</p>
                 </div>
             </div>
@@ -128,24 +128,19 @@
             </div>
         </q-carousel-slide>
         </q-carousel>
-        <q-btn @click="teste">OLA MUNDO</q-btn>
+
     </div>
 </template>
 
 <script setup>
 
-import { ref, reactive, onMounted, onUnmounted, watch, defineProps } from 'vue'
+import { ref,  onMounted, onUnmounted,  defineProps } from 'vue'
 
 const props = defineProps({
   languageTexts: Object,
 });
 
-function teste(){
 
-  console.log(props);
-
-
-}
 
     const slide = ref(1);
     let isMobile = ref(false)
