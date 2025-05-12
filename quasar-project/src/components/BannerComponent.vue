@@ -8,16 +8,14 @@
 
     <div class="image-container">
       <br>
-      <br>
-      <br>
-      <br>
-      <br>
+      <br v-if="!$q.screen.xs"/>
+      <br v-if="!$q.screen.xs"/>
+      <br v-if="!$q.screen.xs"/>
+      <br v-if="!$q.screen.xs"/>
       <q-separator color="orange" inset />
+      <br v-if="!$q.screen.xs"/>
+      <br v-if="!$q.screen.xs"/>
       <br>
-
-      <br>
-      <br>
-
       <br>
       <br>
       <div class="text-h3 text-white text-weight-bolder text-center">
@@ -61,11 +59,10 @@
         </div>
         <br />
         <br />
-
+        <br v-if="$q.screen.xs"/>
           <div class="text-h3 text-white text-weight-bolder text-center">
             {{ props.languageTexts.tools }}
       </div>
-
       <br />
         <div  class="flex flex-column items-center justify-center">
           <img src="/src/assets/img/nginx.png" alt="">
@@ -93,6 +90,9 @@
 
 <script setup>
 import {defineProps} from "vue";
+import { useQuasar } from "quasar";
+
+const $q = useQuasar();
 
 const props = defineProps({
   languageTexts: Object,

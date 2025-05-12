@@ -70,7 +70,7 @@
           style="background-color: #24053e"
         >
           <q-tab-panel name="home">
-            <about :languageTexts="languageTexts.homeLanguage"></about>
+            <about :languageTexts="languageTexts.homeLanguage" :idioma="languageTexts.idioma"></about>
             <banner :languageTexts="languageTexts.homeLanguage" class="full-height full-width"></banner>
             <slider :languageTexts="languageTexts.homeLanguage" class="full-height full-width"></slider>
           </q-tab-panel>

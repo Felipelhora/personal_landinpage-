@@ -31,7 +31,7 @@
           v-if="$q.screen.xs"
           src="../assets/foto_face.png"
           alt="Foto de Felipe L. Hora"
-          :style="{ width: '350px'}"
+          :style="{ width: '370px'}"
         />
         <img
           v-if="$q.screen.sm"
@@ -261,8 +261,11 @@
               </div>
             </q-carousel-slide>
             <q-carousel-slide name="map" class="column no-wrap items-center q-pa-md">
-              <div class="q-mt-md full-width" style="max-width: 800px;">
-                  <p class="text-h3 text-weight-bolder text-center">
+              <div style="max-width: 800px;">
+                <p v-if="!$q.screen.xs"  class="text-h3 text-weight-bolder text-center">
+                  {{ props.languageTexts.social_skills}}
+                </p>
+                <p v-if="$q.screen.xs" class="text-h5 text-weight-bolder text-center">
                     {{ props.languageTexts.social_skills}}
                   </p>
                 <br>
@@ -271,7 +274,7 @@
                   {{ props.languageTexts.social_skills_text}}
                 </p>
                 <br>
-                <br>
+                <br v-if="!$q.screen.xs"/>
               </div>
             </q-carousel-slide>
           </q-carousel>
@@ -287,6 +290,7 @@ import { ref, reactive, defineProps, watch } from "vue";
 
 const props = defineProps({
   languageTexts: Object,
+  idioma: Object
 });
 
 const $q = useQuasar();
