@@ -27,7 +27,7 @@
 >
 >
     <br v-if="!$q.screen.xs">
-<div class="row items-center justify-center"  style="max-width: 1050px; margin: auto; min-height: 700px;">
+<div class="row items-center justify-center"  style="max-width: 800px; margin: auto; min-height: 700px;">
     <div v-if="!$q.screen.xs" class="col-xl-6 col-lg-5 col-md-5 col-sm-6 col-xs-12 flex flex-center">
         <br v-if="$q.screen.xs">
         <br v-if="$q.screen.xs">
@@ -37,7 +37,7 @@
         :style="{
                   maxWidth: '100%',
                   width: '100%',
-                  maxWidth: '1050px'
+                  maxWidth: '900px'
                   }"
       />
 
@@ -143,37 +143,37 @@
                 <ul>
                   <li>
                     <div>
-                      <img src="src/assets/img/mining.png" alt="" class="q-mr-sm" style="width: 40px; height: 40px" />
+                      <img src="src/assets/mining.png" alt="" class="q-mr-sm" style="width: 40px; height: 40px" />
                       {{ props.languageTexts.specialties_data_mining }}
                     </div>
                   </li>
                   <li>
                     <div>
-                      <img src="src/assets/img/rpa_.png" alt="" class="q-mr-sm" style="width: 40px; height: 40px" />
+                      <img src="src/assets/rpa_.png" alt="" class="q-mr-sm" style="width: 40px; height: 40px" />
                       {{ props.languageTexts.specialties_rpa }}
                     </div>
                   </li>
                   <li>
                     <div>
-                      <img src="src/assets/img/api.png" alt="" class="q-mr-sm" style="width: 40px; height: 40px" />
+                      <img src="src/assets/api.png" alt="" class="q-mr-sm" style="width: 40px; height: 40px" />
                       {{ props.languageTexts.specialties_rest }}
                     </div>
                   </li>
                   <li>
                     <div>
-                      <img src="src/assets/img/data_s.png" alt="" class="q-mr-sm" style="width: 40px; height: 40px" />
+                      <img src="src/assets/data_s.png" alt="" class="q-mr-sm" style="width: 40px; height: 40px" />
                       {{ props.languageTexts.specialties_data_science }}
                     </div>
                   </li>
                   <li>
                     <div>
-                      <img src="src/assets/img/IA.png" alt="" class="q-mr-sm" style="width: 40px; height: 40px" />
+                      <img src="src/assets/IA.png" alt="" class="q-mr-sm" style="width: 40px; height: 40px" />
                       {{ props.languageTexts.specialties_ia }}
                     </div>
                   </li>
                   <li>
                     <div>
-                      <img src="src/assets/img/arquitetura.png" alt="" class="q-mr-sm" style="width: 40px; height: 40px" />
+                      <img src="src/assets/arquitetura.png" alt="" class="q-mr-sm" style="width: 40px; height: 40px" />
                       {{ props.languageTexts.specialties_arquitetura }}
                     </div>
                   </li>
@@ -191,28 +191,28 @@
           </div>
 
           <div class="text-center q-mt-md">
-            <img src="src/assets/img/rpa_.png" alt="" style="width: 40px; height: 40px" />
+            <img src="src/assets/rpa_.png" alt="" style="width: 40px; height: 40px" />
             <p class="text-h5 text-center" style="white-space: normal; word-break: break-word;">
               {{ props.languageTexts.specialties_rpa }}
             </p>
           </div>
 
           <div class="text-center q-mt-md">
-            <img src="src/assets/img/api.png" alt="" style="width: 40px; height: 40px" />
+            <img src="src/assets/api.png" alt="" style="width: 40px; height: 40px" />
             <p class="text-h5 text-center" style="white-space: normal; word-break: break-word;">
               {{ props.languageTexts.specialties_rest }}
             </p>
           </div>
 
           <div class="text-center q-mt-md">
-            <img src="src/assets/img/IA.png" alt="" style="width: 40px; height: 40px" />
+            <img src="src/assets/IA.png" alt="" style="width: 40px; height: 40px" />
             <p class="text-h5 text-center" style="white-space: normal; word-break: break-word;">
               {{ props.languageTexts.specialties_data_science }}
             </p>
           </div>
 
           <div class="text-center q-mt-md">
-            <img src="src/assets/img/arquitetura.png" alt="" style="width: 40px; height: 40px" />
+            <img src="src/assets/arquitetura.png" alt="" style="width: 40px; height: 40px" />
             <p class="text-h5 text-center" style="white-space: normal; word-break: break-word;">
               {{ props.languageTexts.specialties_arquitetura }}
             </p>

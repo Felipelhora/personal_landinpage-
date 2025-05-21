@@ -89,7 +89,7 @@ const privateCards = ref([]);
 
 
 function getImageUrl(filename) {
-  return new URL(`../assets/img/${filename}`, import.meta.url).href;
+  return new URL(`../assets/${filename}`, import.meta.url).href;
 }
 
 function atualizarCards() {

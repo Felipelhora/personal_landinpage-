@@ -22,11 +22,11 @@
           {{ props.languageTexts.programming_languages }}
         <br />
         <div  class="flex flex-column items-center justify-center">
-          <img src="/src/assets/img/javascript.png" alt="" :class="[$q.screen.xs ? 'imgPhone' : 'img']">
-          <img src="/src/assets/img/php.png" alt="" :class="[$q.screen.xs ? 'imgPhone' : 'img']">
-          <img src="/src/assets/img/python.png" alt="" :class="[$q.screen.xs ? 'imgPhone' : 'img']">
-          <img src="/src/assets/img/rust.png" alt="" :class="[$q.screen.xs ? 'imgPhone' : 'img']">
-          <img src="/src/assets/img/r_language.png" alt="" :class="[$q.screen.xs ? 'imgPhone' : 'img']">
+          <img src="/src/assets/javascript.png" alt="" :class="[$q.screen.xs ? 'imgPhone' : 'img']">
+          <img src="/src/assets/php.png" alt="" :class="[$q.screen.xs ? 'imgPhone' : 'img']">
+          <img src="/src/assets/python.png" alt="" :class="[$q.screen.xs ? 'imgPhone' : 'img']">
+          <img src="/src/assets/rust.png" alt="" :class="[$q.screen.xs ? 'imgPhone' : 'img']">
+          <img src="/src/assets/r_language.png" alt="" :class="[$q.screen.xs ? 'imgPhone' : 'img']">
         </div>
         <br />
         <br />
@@ -36,12 +36,12 @@
 
         <br />
         <div  class="flex flex-column items-center justify-center">
-          <img src="/src/assets/img/vue.png" alt="" :class="[$q.screen.xs ? 'imgPhone' : 'img']">
-          <img src="/src/assets/img/quasar.svg" alt="" :class="[$q.screen.xs ? 'imgPhone' : 'img']">
-          <img src="/src/assets/img/laravel.png" alt="" :class="[$q.screen.xs ? 'imgPhone' : 'img']">
-          <img src="/src/assets/img/fastapi.png" alt="" :class="[$q.screen.xs ? 'imgPhone' : 'img']">
-          <img src="/src/assets/img/flask.png" alt="" :class="[$q.screen.xs ? 'imgPhone' : 'img']">
-          <img src="/src/assets/img/django.png" alt="" :class="[$q.screen.xs ? 'imgPhone' : 'img']">
+          <img src="/src/assets/vue.png" alt="" :class="[$q.screen.xs ? 'imgPhone' : 'img']">
+          <img src="/src/assets/quasar.svg" alt="" :class="[$q.screen.xs ? 'imgPhone' : 'img']">
+          <img src="/src/assets/laravel.png" alt="" :class="[$q.screen.xs ? 'imgPhone' : 'img']">
+          <img src="/src/assets/fastapi.png" alt="" :class="[$q.screen.xs ? 'imgPhone' : 'img']">
+          <img src="/src/assets/flask.png" alt="" :class="[$q.screen.xs ? 'imgPhone' : 'img']">
+          <img src="/src/assets/django.png" alt="" :class="[$q.screen.xs ? 'imgPhone' : 'img']">
         </div>
         <br />
         <br />
@@ -52,9 +52,9 @@
 
         <br />
         <div  class="flex flex-column items-center justify-center">
-          <img src="/src/assets/img/postgres.png" alt="" :class="[$q.screen.xs ? 'imgPhone' : 'img']">
-          <img src="/src/assets/img/mysql.png" alt="" :class="[$q.screen.xs ? 'imgPhone' : 'img']">
-          <img src="/src/assets/img/redis.png" alt="" :class="[$q.screen.xs ? 'imgPhone' : 'img']">
+          <img src="/src/assets/postgres.png" alt="" :class="[$q.screen.xs ? 'imgPhone' : 'img']">
+          <img src="/src/assets/mysql.png" alt="" :class="[$q.screen.xs ? 'imgPhone' : 'img']">
+          <img src="/src/assets/redis.png" alt="" :class="[$q.screen.xs ? 'imgPhone' : 'img']">
         </div>
         <br />
         <br />
@@ -64,14 +64,14 @@
       </div>
       <br />
         <div  class="flex flex-column items-center justify-center">
-          <img src="/src/assets/img/nginx.png" alt="" :class="[$q.screen.xs ? 'imgPhone' : 'img']">
-          <img src="/src/assets/img/gitlab.png" alt="" :class="[$q.screen.xs ? 'imgPhone' : 'img']">
-          <img src="/src/assets/img/docker.png" alt="" :class="[$q.screen.xs ? 'imgPhone' : 'img']">
-          <img src="/src/assets/img/node.png" alt="" :class="[$q.screen.xs ? 'imgPhone' : 'img']">
-          <img src="/src/assets/img/npm.png" alt="" :class="[$q.screen.xs ? 'imgPhone' : 'img']">
-          <img src="/src/assets/img/opencv.png" alt="" :class="[$q.screen.xs ? 'imgPhone' : 'img']">
-          <img src="/src/assets/img/linux.png" alt="" :class="[$q.screen.xs ? 'imgPhone' : 'img']">
-          <img src="/src/assets/img/aws.png" alt="" :class="[$q.screen.xs ? 'imgPhone' : 'img']">
+          <img src="/src/assets/nginx.png" alt="" :class="[$q.screen.xs ? 'imgPhone' : 'img']">
+          <img src="/src/assets/gitlab.png" alt="" :class="[$q.screen.xs ? 'imgPhone' : 'img']">
+          <img src="/src/assets/docker.png" alt="" :class="[$q.screen.xs ? 'imgPhone' : 'img']">
+          <img src="/src/assets/node.png" alt="" :class="[$q.screen.xs ? 'imgPhone' : 'img']">
+          <img src="/src/assets/npm.png" alt="" :class="[$q.screen.xs ? 'imgPhone' : 'img']">
+          <img src="/src/assets/opencv.png" alt="" :class="[$q.screen.xs ? 'imgPhone' : 'img']">
+          <img src="/src/assets/linux.png" alt="" :class="[$q.screen.xs ? 'imgPhone' : 'img']">
+          <img src="/src/assets/aws.png" alt="" :class="[$q.screen.xs ? 'imgPhone' : 'img']">
 
         </div>
         <br>

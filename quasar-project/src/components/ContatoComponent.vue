@@ -9,7 +9,7 @@
         </div>
 
         <div class="q-mb-sm row items-center">
-          <img src="src/assets/img/lindkin.png" alt="LinkedIn" class="icon" />
+          <img src="src/assets/lindkin.png" alt="LinkedIn" class="icon" />
           <a
             href="https://www.linkedin.com/in/felipe-hora-46821b240/"
             target="_blank"
@@ -18,7 +18,7 @@
         </div>
 
         <div class="row items-center">
-          <img src="src/assets/img/github.png" alt="Github" class="icon" />
+          <img src="src/assets/github.png" alt="Github" class="icon" />
           <a
             href="https://github.com/Felipelhora/"
             target="_blank"
@@ -36,7 +36,7 @@
         </div>
 
         <div class="q-mb-sm row items-center">
-          <img src="src/assets/img/lindkin.png" alt="LinkedIn" class="icon" />
+          <img src="src/assets/lindkin.png" alt="LinkedIn" class="icon" />
           <a
             href="https://www.linkedin.com/in/felipe-hora-46821b240/"
             target="_blank"
@@ -45,7 +45,7 @@
         </div>
 
         <div class="row items-center">
-          <img src="src/assets/img/github.png" alt="Github" class="icon" />
+          <img src="src/assets/github.png" alt="Github" class="icon" />
           <a
             href="https://github.com/Felipelhora/"
             target="_blank"

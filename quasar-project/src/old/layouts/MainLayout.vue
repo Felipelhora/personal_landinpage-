@@ -10,7 +10,7 @@
         <q-toolbar>
           <q-toolbar-title class="text-white" style="margin-left: 60px">
             <q-avatar>
-              <!-- <img src="../assets/img/logo-quasar-projeto.png" alt="Logo Projeto" style="filter: invert(100%); width: 60px"> -->
+              <!-- <img src="../assets/logo-quasar-projeto.png" alt="Logo Projeto" style="filter: invert(100%); width: 60px"> -->
             </q-avatar>
             <router-link
               to="/"
