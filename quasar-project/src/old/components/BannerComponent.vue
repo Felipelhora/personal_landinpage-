@@ -46,7 +46,7 @@ function teste() {
   background-image: url("../assets/bg-banner.svg");
   background-position: center;
   background-size: cover;
-  height: 100%;
+  height: 50%;
 }
 
 .title-container {

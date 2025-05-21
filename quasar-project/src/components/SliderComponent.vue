@@ -39,7 +39,7 @@
 
               <div class="slider-card rounded-borders col-4 full-height">
                 <span>{{ props.languageTexts.postgraduate_studies }}</span>
-                <h3>{{ props.languageTexts.postgraduate_digital_law }}</h3>
+                <h3>{{ props.languageTexts.postgraduate_const_law }}</h3>
                 <p>GRAN - 2024</p>
             </div>
 
@@ -86,7 +86,7 @@
                 <div class="row fit justify-start items-center q-gutter-xs q-col-gutter no-wrap">
                     <div class="slider-card rounded-borders col-12 full-height">
                       <span>{{ props.languageTexts.postgraduate_studies }}</span>
-                      <h3>{{ props.languageTexts.postgraduate_const_law }}</h3>
+                      <h3>{{ props.languageTexts.postgraduate_digital_law }}</h3>
                         <p>GRAN - 2024</p>
                     </div>
             </div>
@@ -104,7 +104,7 @@
                 <div class="row fit justify-start items-center q-gutter-xs q-col-gutter no-wrap">
                     <div class="slider-card rounded-borders col-12 full-height">
                       <span>{{ props.languageTexts.graduate }}</span>
-                      <h3>{{ props.languageTexts.graduate_dir }}</h3>
+                      <h3>{{ props.languageTexts.postgraduate_const_law }}</h3>
                 <p>GRAN - 2024</p>
                     </div>
             </div>

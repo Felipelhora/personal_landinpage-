@@ -1,5 +1,4 @@
 <template>
-  <div class="">
     <q-layout view="lHh Lpr lFf">
       <q-header
         elevated
@@ -8,25 +7,26 @@
         style="background-color: aquamarine"
       >
         <div class="flex justify-center q-pa-md">
-          <q-toolbar>
-            <q-toolbar-title class="text-purple-10" style="margin-left: 10px">
-            </q-toolbar-title>
-            <q-tabs
-              v-model="state.tab"
-              dense
-              filled
-              class="text-grey"
-              active-color="primary"
-              indicator-color="primary"
-              align="justify"
-              narrow-indicator
-            >
-              <q-tab name="home" label="HOME" />
-              <q-tab name="portifolio" label="PORTFÓLIO" />
-              <q-tab name="contato" label="CONTATO" />
-            </q-tabs>
+          <q-toolbar class="full-width bg-mint text-dark">
+            <div class="toolbar-inner row items-center justify-between q-px-md">
+              <q-tabs
+                v-model="state.tab"
+                dense
+                filled
+                class="text-grey"
+                active-color="primary"
+                indicator-color="primary"
+                align="justify"
+                narrow-indicator
+              >
+                <q-tab name="home" label="HOME" />
+                <q-tab name="portifolio" label="PORTFÓLIO" />
+                <q-tab name="contato" label="CONTATO" />
+              </q-tabs>
+            </div>
           </q-toolbar>
         </div>
+
         <div v-if="!$q.screen.xs" class="q-ml-auto">
           <q-select
             class="q-pa-sm"
@@ -37,9 +37,9 @@
             @update:model-value="chooseLanguage"
             :style="confiFontText"
           />
-
         </div>
-        <div v-if="$q.screen.xs" >
+
+        <div v-if="$q.screen.xs">
           <q-select
             class="q-pa-sm"
             filled
@@ -52,49 +52,46 @@
         </div>
       </q-header>
 
-      <q-separator />
+      <q-page-container>
+        <q-page class="q-pa-md">
+          <q-tab-panels
+            v-model="state.tab"
+            animated
+            style="background-color: #24053e"
+          >
+            <q-tab-panel name="home">
+              <about
+                :languageTexts="languageTexts.homeLanguage"
+                :idioma="languageTexts.idioma"
 
-      <q-select
-        v-model="languageTexts.idioma"
-        filled
-        label="IDIOMA"
-        :options="idiomaOptions"
-        @update:model-value="chooseLanguage"
-        class="col-xl-2 q-pa-sm"
-      />
+              />
+              <banner
+                :languageTexts="languageTexts.homeLanguage"
+              />
+              <slider
+                :languageTexts="languageTexts.homeLanguage"
+              />
+            </q-tab-panel>
 
-      <q-page-container style="background-color: #24053e">
-        <q-tab-panels
-          v-model="state.tab"
-          animated
-          style="background-color: #24053e"
-        >
-          <q-tab-panel name="home">
-            <about :languageTexts="languageTexts.homeLanguage" :idioma="languageTexts.idioma"></about>
-            <banner :languageTexts="languageTexts.homeLanguage" class="full-height full-width"></banner>
-            <slider :languageTexts="languageTexts.homeLanguage" class="full-height full-width"></slider>
-          </q-tab-panel>
+            <q-tab-panel name="portifolio">
+              <portifolioComponente
+                :languageTexts="languageTexts.portifolioLanguage"
+                :repositoriesList="languageTexts.repositoriesList"
+                :idioma="languageTexts.idioma"
+              />
+            </q-tab-panel>
 
-          <q-tab-panel name="portifolio">
-            <portifolioComponente :languageTexts="languageTexts.portifolioLanguage"
-                        :repositoriesList="languageTexts.repositoriesList"
-                        :idioma="languageTexts.idioma"></portifolioComponente>
-          </q-tab-panel>
-
-          <q-tab-panel name="contato">
-            <ContatoComponent></ContatoComponent>
-
-          </q-tab-panel>
-        </q-tab-panels>
+            <q-tab-panel name="contato">
+              <ContatoComponent />
+            </q-tab-panel>
+          </q-tab-panels>
+        </q-page>
       </q-page-container>
     </q-layout>
-  </div>
 </template>
 
+
 <script setup>
-
-
-
 import { reactive, ref } from "vue";
 import about from "/src/components/AboutComponent.vue";
 import banner from "/src/components/BannerComponent.vue";
@@ -108,15 +105,10 @@ import { useQuasar } from "quasar";
 
 const $q = useQuasar();
 
-const activeTab = ref("Home");
-
-// CONSTS
 const state = reactive({
   tab: "home",
 });
 
-
-//// LAYOUT
 const fontText = config.fontTexts || "Arial, sans-serif";
 const fontSizeText = config.sizeFontTexts || "18px";
 const confiFontText = {
@@ -124,36 +116,47 @@ const confiFontText = {
   fontSize: fontSizeText,
 };
 
-//// IDIOMA
 const idiomaOptions = [
   { label: "🇧🇷🇵🇹", value: "portugues" },
   { label: "🇬🇧🇺🇸", value: "ingles" },
   { label: "🇫🇷🇨🇦", value: "frances" },
 ];
 
-///// VAR SISTEMA
 const languageTexts = reactive({
   idioma: { label: "🇧🇷🇵🇹", value: "portugues" },
   language: "portugues",
   homeLanguage: language["portugues"]["home"],
-  portifolioLanguage : language["portugues"]["portifolio"],
-  repositoriesList: repositories['portugues'],
+  portifolioLanguage: language["portugues"]["portifolio"],
+  repositoriesList: repositories["portugues"],
   contactLanguage: language["portugues"]["portifolio"],
 });
 
 const chooseLanguage = () => {
-  languageTexts.portifolioLanguage =
-    language[languageTexts.idioma["value"]]['portifolio'];
-  languageTexts.homeLanguage =
-    language[languageTexts.idioma["value"]]["home"];
-  languageTexts.repositoriesList = repositories[languageTexts.idioma["value"]];
+  const lang = languageTexts.idioma.value;
+  languageTexts.portifolioLanguage = language[lang]["portifolio"];
+  languageTexts.homeLanguage = language[lang]["home"];
+  languageTexts.repositoriesList = repositories[lang];
 };
 </script>
 
-<style>
-.all_page {
-  /* background-color: rgb(22, 194, 108); */
-  /* background-size: cover; rgb(4, 5, 49);*/
-  /* background-position: center; */
+<style scoped>
+.layout-wrapper {
+  max-width: 1000px;
+  margin: 0 auto;
+  transform: scale(1.5);
+  transform-origin: top center;
+}
+
+/* Opcional: para evitar que a escala quebre o layout do body */
+body, html {
+  overflow-x: hidden;
+}
+
+/* Para centralizar corretamente tabs e toolbar */
+.tabs-wrapper,
+.q-toolbar-container {
+  max-width: 100%;
+  width: 100%;
+  margin: 0 auto;
 }
 </style>

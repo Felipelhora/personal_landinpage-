@@ -5,7 +5,7 @@
         <div class="text-h3 text-white q-mb-md text-center">
           <q-icon name="email" class="q-mr-sm" />
           <strong>E-mail:</strong>
-          <div>felipelhora@gmail.com</div>
+          <div>felipelhora.dev@gmail.com</div>
         </div>
 
         <div class="q-mb-sm row items-center">
@@ -32,7 +32,7 @@
         <div class="text-h5 text-white q-mb-md text-center">
           <q-icon name="email" class="q-mr-sm" />
           <strong>E-mail:</strong>
-          <div>felipelhora@gmail.com</div>
+          <div>felipelhora.dev@gmail.com</div>
         </div>
 
         <div class="q-mb-sm row items-center">

@@ -22,12 +22,11 @@
           {{ props.languageTexts.programming_languages }}
         <br />
         <div  class="flex flex-column items-center justify-center">
-          <img src="/src/assets/img/javascript.png" alt="">
-          <img src="/src/assets/img/php.png" alt="">
-          <img src="/src/assets/img/python.png" alt="">
-          <img src="/src/assets/img/rust.png" alt="">
-          <img src="/src/assets/img/r_language.png" alt="">
-
+          <img src="/src/assets/img/javascript.png" alt="" :class="[$q.screen.xs ? 'imgPhone' : 'img']">
+          <img src="/src/assets/img/php.png" alt="" :class="[$q.screen.xs ? 'imgPhone' : 'img']">
+          <img src="/src/assets/img/python.png" alt="" :class="[$q.screen.xs ? 'imgPhone' : 'img']">
+          <img src="/src/assets/img/rust.png" alt="" :class="[$q.screen.xs ? 'imgPhone' : 'img']">
+          <img src="/src/assets/img/r_language.png" alt="" :class="[$q.screen.xs ? 'imgPhone' : 'img']">
         </div>
         <br />
         <br />
@@ -37,12 +36,12 @@
 
         <br />
         <div  class="flex flex-column items-center justify-center">
-          <img src="/src/assets/img/vue.png" alt="">
-          <img src="/src/assets/img/quasar.svg" alt="">
-          <img src="/src/assets/img/laravel.png" alt="">
-          <img src="/src/assets/img/fastapi.png" alt="">
-          <img src="/src/assets/img/flask.png" alt="">
-          <img src="/src/assets/img/django.png" alt="">
+          <img src="/src/assets/img/vue.png" alt="" :class="[$q.screen.xs ? 'imgPhone' : 'img']">
+          <img src="/src/assets/img/quasar.svg" alt="" :class="[$q.screen.xs ? 'imgPhone' : 'img']">
+          <img src="/src/assets/img/laravel.png" alt="" :class="[$q.screen.xs ? 'imgPhone' : 'img']">
+          <img src="/src/assets/img/fastapi.png" alt="" :class="[$q.screen.xs ? 'imgPhone' : 'img']">
+          <img src="/src/assets/img/flask.png" alt="" :class="[$q.screen.xs ? 'imgPhone' : 'img']">
+          <img src="/src/assets/img/django.png" alt="" :class="[$q.screen.xs ? 'imgPhone' : 'img']">
         </div>
         <br />
         <br />
@@ -53,9 +52,9 @@
 
         <br />
         <div  class="flex flex-column items-center justify-center">
-          <img src="/src/assets/img/postgres.png" alt="">
-          <img src="/src/assets/img/mysql.png" alt="">
-          <img src="/src/assets/img/redis.png" alt="">
+          <img src="/src/assets/img/postgres.png" alt="" :class="[$q.screen.xs ? 'imgPhone' : 'img']">
+          <img src="/src/assets/img/mysql.png" alt="" :class="[$q.screen.xs ? 'imgPhone' : 'img']">
+          <img src="/src/assets/img/redis.png" alt="" :class="[$q.screen.xs ? 'imgPhone' : 'img']">
         </div>
         <br />
         <br />
@@ -65,14 +64,14 @@
       </div>
       <br />
         <div  class="flex flex-column items-center justify-center">
-          <img src="/src/assets/img/nginx.png" alt="">
-          <img src="/src/assets/img/gitlab.png" alt="">
-          <img src="/src/assets/img/docker.png" alt="">
-          <img src="/src/assets/img/node.png" alt="">
-          <img src="/src/assets/img/npm.png" alt="">
-          <img src="/src/assets/img/opencv.png" alt="">
-          <img src="/src/assets/img/linux.png" alt="">
-          <img src="/src/assets/img/aws.png" alt="">
+          <img src="/src/assets/img/nginx.png" alt="" :class="[$q.screen.xs ? 'imgPhone' : 'img']">
+          <img src="/src/assets/img/gitlab.png" alt="" :class="[$q.screen.xs ? 'imgPhone' : 'img']">
+          <img src="/src/assets/img/docker.png" alt="" :class="[$q.screen.xs ? 'imgPhone' : 'img']">
+          <img src="/src/assets/img/node.png" alt="" :class="[$q.screen.xs ? 'imgPhone' : 'img']">
+          <img src="/src/assets/img/npm.png" alt="" :class="[$q.screen.xs ? 'imgPhone' : 'img']">
+          <img src="/src/assets/img/opencv.png" alt="" :class="[$q.screen.xs ? 'imgPhone' : 'img']">
+          <img src="/src/assets/img/linux.png" alt="" :class="[$q.screen.xs ? 'imgPhone' : 'img']">
+          <img src="/src/assets/img/aws.png" alt="" :class="[$q.screen.xs ? 'imgPhone' : 'img']">
 
         </div>
         <br>
@@ -107,7 +106,7 @@ const props = defineProps({
   background-color: aquamarine ;
   background-position: center;
   background-size: cover;
-  height: 100%;
+  height: 50%;
 }
 
 .title-container {
@@ -129,10 +128,7 @@ h1 span {
   border-bottom: 3px solid #410196;
 }
 
-.image-container {
-  /* display: flex;
-  justify-content: center; */
-}
+
 
 img {
   position: relative;
@@ -143,6 +139,15 @@ img {
   margin: 10px; /* Adiciona espaço entre as imagens */
 }
 
+.imgPhone {
+  position: relative;
+  top: 5px;
+  width: 100px;
+  animation: mover 2s infinite alternate;
+  z-index: 9;
+  margin: 10px; /* Adiciona espaço entre as imagens */
+
+}
 
 @keyframes mover {
   0% {
